@@ -65,7 +65,7 @@ footer {
 }
 
 /* Responsive Layout: Medium Screens */
-@media (min-width: 601px) and (max-width: 1024px) {
+@media (min-width: 601px) and (max-width: 1023px) {
     .main {
         grid-template-columns: 1fr 1fr; /* Cards side by side on medium screens */
         gap: 20px;
@@ -73,5 +73,8 @@ footer {
 
     .card {
         padding: 20px;
+    }
+    .card:nth-child(3) {
+        grid-column: 1 / -1;
     }
 }
