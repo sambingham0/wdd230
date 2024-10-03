@@ -118,12 +118,11 @@ footer {
 .map-container {
     max-width: 1000px; /* Max width of the map */
     margin: 20px auto; /* Center the map and add some margin */
-    border: 2px solid #ccc; /* Optional: Add a border around the map */
-    border-radius: 8px; /* Optional: Round the corners of the border */
-    overflow: hidden; /* Ensure the iframe fits within the container */
+    border: 2px solid #ccc;
+    border-radius: 8px;
+    overflow: hidden;
 }
 
-/* Responsive iframe */
 .map-container iframe {
     width: 100%; /* Full width of the container */
     height: 450px; /* Height of the map */
