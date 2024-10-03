@@ -23,12 +23,15 @@ header h1 {
     margin: 0;
 }
 
+nav {
+    position: relative; /* Ensure the nav can position the button */
+}
+
 nav ul {
     list-style-type: none;
     background-color: #00008b;
     text-align:center;
-    padding-top: 1px;
-    padding-bottom: 1px;
+    padding: 1px 0;
 }
 
 nav li {
@@ -37,14 +40,32 @@ nav li {
 }
 
 nav a {
+    position: relative; /* Establish a positioning context */
     color: white;
     display: block;
     text-decoration: none;
+    padding-bottom: 5px; /* Add padding to accommodate the line */
+}
+
+nav a::after {
+    content: ""; /* Create an empty pseudo-element */
+    position: absolute; /* Position it relative to the link */
+    left: 0;
+    bottom: 0; /* Align to the bottom */
+    height: 2px; /* Height of the line */
+    width: 100%; /* Full width of the link */
+    background-color: #fff; /* Color of the line */
+    transform: scaleX(0); /* Initially scale down the line */
+    transition: transform 0.3s ease; /* Smooth transition */
 }
 
 nav a:hover {
     background-color: #555;
     text-decoration: underline;
+}
+
+nav a:hover::after {
+    transform: scaleX(1); /* Scale the line to full width on hover */
 }
 
 h2 {
@@ -71,4 +92,57 @@ main {
 footer {
     text-align: center;
     padding: 20px;
+}
+
+#menu {
+    font-size: 1.5rem;
+    border: 0;
+    background: none;
+    color: #000;
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+    cursor: pointer; /* Change cursor to pointer */
+    display: none; /* Hide by default */
+}
+
+#menu::before {
+    content: "☰"; /* Hamburger icon */
+}
+
+#menu.open::before {
+    content: "❌"; /* Close icon */
+}
+
+/* Styles for the Google Map */
+.map-container {
+    max-width: 1000px; /* Max width of the map */
+    margin: 20px auto; /* Center the map and add some margin */
+    border: 2px solid #ccc; /* Optional: Add a border around the map */
+    border-radius: 8px; /* Optional: Round the corners of the border */
+    overflow: hidden; /* Ensure the iframe fits within the container */
+}
+
+/* Responsive iframe */
+.map-container iframe {
+    width: 100%; /* Full width of the container */
+    height: 450px; /* Height of the map */
+    border: 0; /* Remove the border of the iframe */
+}
+
+
+/* Media query to show the hamburger menu on mobile */
+@media (max-width: 600px) {
+    #menu {
+        display: block; /* Show hamburger button in mobile view */
+    }
+
+    nav ul {
+        display: none; /* Hide menu by default on mobile */
+    }
+
+    nav ul.show {
+        display: flex; /* Show menu when toggled */
+        flex-direction: column; /* Stack items vertically */
+    }
 }

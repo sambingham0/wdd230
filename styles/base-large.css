@@ -33,4 +33,15 @@
     footer {
         padding: 30px;
     }
+
+    .map-container {
+        max-width: 1400px;
+        margin: 30px auto;
+    }
+
+    .map-container iframe {
+        height: 600px;
+        border-radius: 12px;
+    }
+
 }
