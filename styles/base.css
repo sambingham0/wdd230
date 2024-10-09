@@ -122,8 +122,9 @@ footer {
 
 /* Styles for the Google Map */
 .map-container {
-    max-width: 1000px; /* Max width of the map */
-    margin: 20px auto; /* Center the map and add some margin */
+    width: 30%;
+    height: 300px;
+    margin: 20px auto;
     border: 2px solid #ccc;
     border-radius: 8px;
     overflow: hidden;
