@@ -32,6 +32,12 @@ nav ul {
     background-color: #00008b;
     text-align:center;
     padding: 1px 0;
+    display: none; /* Hide menu by default on mobile */
+}
+
+nav ul.show {
+    display: flex; /* Show menu when toggled */
+    flex-direction: column; /* Stack items vertically */
 }
 
 nav li {
@@ -103,7 +109,7 @@ footer {
     top: 1rem;
     right: 1rem;
     cursor: pointer; /* Change cursor to pointer */
-    display: none; /* Hide by default */
+    display: block; /* Show hamburger button in mobile view */
 }
 
 #menu::before {
@@ -127,21 +133,4 @@ footer {
     width: 100%; /* Full width of the container */
     height: 450px; /* Height of the map */
     border: 0; /* Remove the border of the iframe */
-}
-
-
-/* Media query to show the hamburger menu on mobile */
-@media (max-width: 600px) {
-    #menu {
-        display: block; /* Show hamburger button in mobile view */
-    }
-
-    nav ul {
-        display: none; /* Hide menu by default on mobile */
-    }
-
-    nav ul.show {
-        display: flex; /* Show menu when toggled */
-        flex-direction: column; /* Stack items vertically */
-    }
 }

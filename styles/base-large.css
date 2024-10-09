@@ -26,6 +26,10 @@
         max-width: 1200px;
     }
 
+    #menu {
+        display: none;
+    }
+
     .card {
         padding: 20px;
     }
