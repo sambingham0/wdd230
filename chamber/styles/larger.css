@@ -1,0 +1,9 @@
+@media (min-width: 1025px) {
+    header {
+        text-align: left;
+    }
+
+    nav ul {
+        float: right;
+    }
+}
