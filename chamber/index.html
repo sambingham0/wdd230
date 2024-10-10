@@ -20,19 +20,22 @@
     <header>
         <h1>Welcome to the San Diego Chamber of Commerce</h1>
         <nav>
-            <ul>
+            <button id="menu-toggle" class="hamburger">&#9776;</button> <!-- Hamburger icon -->
+            <ul id="nav-menu">
                 <li><a href="index.html">Home</a></li>
                 <li><a href="discover.html">Discover</a></li>
                 <li><a href="directory.html">Directory</a></li>
                 <li><a href="join.html">Join</a></li>
             </ul>
         </nav>
-    </header>
+    </header>    
 
     <main>
         <section class="hero">
             <h2>Supporting Business Growth</h2>
             <p>Join us in promoting the interests of local businesses.</p>
+            <a href="join.html" class="cta-button">Join the Chamber</a>
+            <img src="images/hero-image.jpg" alt="Hero Image" class="hero-image">
         </section>
 
         <section id="business-spotlight">
@@ -48,6 +51,37 @@
         <section id="temporary-content">
             <p>CONTENT CONTENT CONTENT CONTENT CONTENT CONTENT CONTENT CONTENT CONTENT CONTENT CONTENT</p>
         </section>
+
+        <section id="current-events">
+            <h2>Current Events</h2>
+            <p>Stay tuned for upcoming events!</p>
+            <ul>
+                <li>Event 1: Description of Event 1</li>
+                <li>Event 2: Description of Event 2</li>
+                <li>Event 3: Description of Event 3</li>
+            </ul>
+        </section>  
+        
+        <section id="weather-card">
+            <h2>Weather Forecast</h2>
+            <p>Current weather in San Diego: 75°F, Sunny</p>
+        </section>   
+        
+        <section id="company-spotlights">
+            <h2>Company Spotlights</h2>
+            <div class="spotlight">
+                <h3>Company 1</h3>
+                <p>Description of Company 1.</p>
+            </div>
+            <div class="spotlight">
+                <h3>Company 2</h3>
+                <p>Description of Company 2.</p>
+            </div>
+            <div class="spotlight">
+                <h3>Company 3</h3>
+                <p>Description of Company 3.</p>
+            </div>
+        </section>        
 
         <section id="visitor-questions">
             <h2>Common Visitor Questions</h2>
@@ -65,7 +99,10 @@
     </main>
 
     <footer>
-        <p>&copy; 2024 San Diego Chamber of Commerce | All Rights Reserved</p>
+        <p>&copy; <span id="year"></span> San Diego Chamber of Commerce | All Rights Reserved</p>
+        <p>Contact Us: (619) 555-0347 | Email: sandiegochamber@gmail.com</p>
+        <p>WDD 230 Chamber of Commerce Home Page by Sam Bingham</p>
+        <p id="lastModified"></p>
     </footer>
 
     <script src="scripts/index.js"></script>

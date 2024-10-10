@@ -1,9 +1,211 @@
-@media (min-width: 601px) and (max-width: 1024px) {
-    nav ul li {
-        margin-right: 20px;
-    }
-    
-    .hero {
-        font-size: 1.5em;
-    }
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #FFF5BE;
+    color: #333;
+}
+
+header {
+    background-color: #00457C;
+    color: white;
+    padding: 10px;
+    text-align: center;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+nav ul li {
+    display: inline-block;
+    margin-right: 15px;
+    padding: 3px;
+}
+
+nav ul li a {
+    color: #FFF5BE;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+nav ul li a:hover {
+    color: #FFF5BE;
+}
+
+#nav-menu {
+    display: none;
+    flex-direction: column;
+}
+
+#nav-menu.active {
+    display: block;
+}
+
+.hamburger {
+    display: block;
+    font-size: 30px;
+    background: none;
+    border: none;
+    color: #FFF5BE;
+}
+
+main {
+    padding-left: 1%;
+    padding-right: 1%;
+}
+
+.hero {
+    padding: 20px;
+    text-align: center;
+    background-color: #e0f7fa;
+}
+
+.hero-image {
+    width: 100%; /* Makes it responsive */
+    height: auto; /* Maintains aspect ratio */
+    max-height: 300px; /* Sets a max height for the image */
+    object-fit: cover; /* Ensures the image covers the area */
+}
+
+.cta-button {
+    display: inline-block;
+    margin-top: 15px; /* Add space above the button */
+    padding: 10px 20px;
+    background-color: #00457C;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px; /* Rounds the corners */
+    transition: background-color 0.3s;
+}
+
+.cta-button:hover {
+    background-color: #00354B; /* Darken on hover */
+}
+
+header h1 {
+    color: #FFF5BE;
+    text-align: center;
+}
+
+header h2 {
+    color: #00457C;
+}
+
+button {
+    background-color: #00457C;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #00354B;
+}
+
+#temporary-content {
+    color: black;
+}
+
+section {
+    margin-bottom: 20px;
+}
+
+#current-events {
+    background-color: #e0f7fa; /* Light blue background */
+    padding: 20px;
+    border-radius: 5px; /* Rounded corners */
+    margin-top: 20px; /* Space above the section */
+}
+
+#current-events h2 {
+    color: #00457C; /* Title color */
+    margin-bottom: 15px; /* Space below the title */
+}
+
+#current-events ul {
+    list-style-type: disc; /* Bullet points for the list */
+    padding-left: 20px; /* Indentation for list items */
+}
+
+#current-events li {
+    margin-bottom: 10px; /* Space between list items */
+    color: #333; /* Text color */
+}
+
+#weather-card {
+    background-color: #ffeb3b; /* Yellow background for visibility */
+    padding: 20px;
+    border-radius: 5px; /* Rounded corners */
+    margin-top: 20px; /* Space above the section */
+    text-align: center; /* Center the text */
+}
+
+#weather-card h2 {
+    color: #00457C; /* Title color */
+    margin-bottom: 15px; /* Space below the title */
+}
+
+#weather-card p {
+    font-size: 1.2em; /* Slightly larger font for weather info */
+    color: #333; /* Text color */
+}
+
+#company-spotlights {
+    margin-top: 20px; /* Space above the section */
+}
+
+#company-spotlights h2 {
+    color: #00457C; /* Title color */
+    margin-bottom: 15px; /* Space below the title */
+}
+
+.spotlight {
+    background-color: #f9f9f9; /* Light grey background for each spotlight */
+    padding: 15px;
+    margin-bottom: 10px; /* Space between spotlights */
+    border: 1px solid #ddd; /* Light border */
+    border-radius: 5px; /* Rounded corners */
+    transition: transform 0.2s; /* Transition effect */
+}
+
+.spotlight:hover {
+    transform: scale(1.02); /* Slightly enlarge on hover */
+}
+
+.spotlight h3 {
+    color: #00457C; /* Title color for company */
+    margin-bottom: 10px; /* Space below company name */
+}
+
+.spotlight p {
+    color: #333; /* Text color */
+}
+
+#company-spotlights {
+    margin-top: 20px;
+}
+
+.spotlight {
+    background-color: #f9f9f9;
+    padding: 15px;
+    margin-bottom: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+footer {
+    text-align: center;
+    padding: 10px 0;
+    background-color: #00457C;
+    color: white;
+    position: relative;
+    bottom: 0;
+    width: 100%;
 }
