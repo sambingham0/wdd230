@@ -2,20 +2,23 @@ body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #FFF5BE; /* Secondary color */
-    color: #333; /* Default text color for better readability */
+    background-color: #FFF5BE;
+    color: #333;
 }
 
 header {
-    background-color: #00457C; /* Primary color */
+    background-color: #00457C;
     color: white;
-    padding: 10px 20px;
+    padding: 10px;
     text-align: center;
+    width: 100%;
+    box-sizing: border-box;
 }
 
 nav ul {
     list-style: none;
     padding: 0;
+    margin: 0;
 }
 
 nav ul li {
@@ -24,34 +27,30 @@ nav ul li {
 }
 
 nav ul li a {
-    color: white; /* Link color in the header */
+    color: white;
     text-decoration: none;
-    transition: color 0.3s; /* Smooth color transition */
+    transition: color 0.3s;
 }
 
 nav ul li a:hover {
-    color: #FFF5BE; /* Change link color on hover */
+    color: #FFF5BE;
 }
 
 .hero {
     padding: 20px;
     text-align: center;
-    background-color: #e0f7fa; /* You can change this if desired */
+    background-color: #e0f7fa;
 }
 
-h1, h2 {
-    margin: 10px 0;
-}
-
-h1 {
+header h1 {
     color: #FFF5BE;
+    text-align: center;
 }
 
-h2 {
+header h2 {
     color: #00457C;
 }
 
-/* Button Styles */
 button {
     background-color: #00457C;
     color: white;
@@ -62,14 +61,17 @@ button {
 }
 
 button:hover {
-    background-color: #00354B; /* Darker shade for hover */
+    background-color: #00354B;
 }
 
-/* Footer Styles */
+#temporary-content {
+    color: black;
+}
+
 footer {
     text-align: center;
     padding: 10px 0;
-    background-color: #00457C; /* Primary color for footer */
+    background-color: #00457C;
     color: white;
     position: relative;
     bottom: 0;
