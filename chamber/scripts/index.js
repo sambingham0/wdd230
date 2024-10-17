@@ -26,3 +26,18 @@ function toggleDescription(button) {
         button.textContent = "More"; // Change button text to "More"
     }
 }
+
+const darkModeToggle = document.getElementById('darkModeToggle');
+
+darkModeToggle.addEventListener('change', () => {
+    document.body.classList.toggle('dark-mode');
+    document.querySelector('.hero').classList.toggle('dark-mode');
+    document.querySelectorAll('.card').forEach(card => {
+        card.classList.toggle('dark-mode');
+    });   
+    document.querySelector('#company-spotlights').classList.toggle('dark-mode');
+    document.querySelectorAll('.spotlight').forEach(spotlight => {
+        spotlight.classList.toggle('dark-mode');
+    });
+    document.querySelector('footer').classList.toggle('dark-mode');
+});
