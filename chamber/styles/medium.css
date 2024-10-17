@@ -4,6 +4,8 @@ body {
     padding: 0;
     background-color: #FFF5BE; 
     color: #333;
+    text-size-adjust: 100%;
+    -webkit-text-size-adjust: 100%; /* For older WebKit browsers */
 }
 
 header {
@@ -61,6 +63,113 @@ nav ul li a {
     color: #FFF5BE; 
 }
 
+.switch {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    width: 60px;
+    height: 35px;
+}
+
+.switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+
+.slider {
+    position: aboslute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #ccc;
+    transition: .4s;
+    border-radius: 35px;
+}
+
+.slider:before {
+    position: absolute;
+    content: "";
+    height: 20px;
+    width: 20px;
+    left: 4px;
+    bottom: 4px;
+    top: 0;
+    background-color: white;
+    transition: .4s;
+    border-radius: 50%;
+}
+
+input:checked + .slider {
+    background-color: #00457C;
+}
+
+input:checked + .slider:before {
+    transform: translateX(26px);
+}
+
+.dark-mode-label {
+    position: absolute;
+    top: 13px;
+    right: 60px;
+    color: #FFF5BE;
+    font-size: .7em;
+    margin-right: 10px;
+}
+
+/* Dark Mode Styles */
+body.dark-mode {
+    background-color: #000;
+    color: #fff;
+}
+
+.hero.dark-mode {
+    background-color: #444 !important;
+    color: #fff;
+}
+
+.card.dark-mode {
+    background-color: #444 !important;
+    color: #fff;
+}
+
+#company-spotlights.dark-mode, 
+.spotlight.dark-mode {
+    background-color: #444 !important;
+    color: #fff;
+}
+
+.spotlight.dark-mode h3,
+.spotlight.dark-mode p,
+.spotlight.dark-mode a {
+    color: #fff !important;
+    background-color: #444 !important;
+}
+
+footer.dark-mode {
+    background-color: #333;
+    color: #fff;
+}
+
+.card.dark-mode h2,
+.card.dark-mode p,
+.card.dark-mode .cta-button,
+.card.dark-mode button,
+.hero.dark-mode h2,
+.hero.dark-mode p,
+.hero.dark-mode .cta-button,
+.hero.dark-mode button,
+.spotlight.dark-mode h3,
+.spotlight.dark-mode p,
+.spotlight.dark-mode a,
+#company-spotlights.dark-mode h2,
+#company-spotlights.dark-mode p {
+    color: #fff !important;
+    background-color: #444 !important;
+}
+/* End Dark Mode Styles */
+
 main {
     padding: 0 1%;
 }
@@ -86,7 +195,7 @@ main {
     color: white;
     text-decoration: none;
     border-radius: 5px; 
-    transition: background-color 0.3s;
+    transition: 0.3s;
 }
 
 .cta-button:hover {
@@ -108,7 +217,7 @@ button {
     border: none;
     padding: 10px 20px;
     cursor: pointer;
-    transition: background-color 0.3s;
+    transition: 0.3s;
 }
 
 button:hover {

@@ -4,7 +4,8 @@ body {
     padding: 0;
     background-color: #FFF5BE; 
     color: #333;
-    text-size-adjust: none;
+    text-size-adjust: 100%;
+    -webkit-text-size-adjust: 100%; /* For older WebKit browsers */
 }
 
 header {
