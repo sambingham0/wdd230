@@ -1,15 +1,23 @@
+:root {
+    --primary-bg-color: #00457C;
+    --secondary-bg-color: #e0f7fa;
+    --dark-bg-color: #444;
+    --text-color: #333;
+    --light-text-color: #FFF5BE;
+    --hover-bg-color: #00354B;
+}
+
 body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #FFF5BE; 
-    color: #333;
-    text-size-adjust: 100%;
-    -webkit-text-size-adjust: 100%; /* For older WebKit browsers */
+    background-color: var(--secondary-bg-color); 
+    color: var(--text-color);
+    text-size-adjust: 100%; /* For modern browsers */
 }
 
 header {
-    background-color: #00457C; 
+    background-color: var(--primary-bg-color);
     color: white;
     padding: 10px;
     text-align: center;
@@ -17,7 +25,7 @@ header {
 }
 
 h2 {
-    position: relative; 
+    position: relative;
     padding-bottom: 10px; 
 }
 
@@ -25,8 +33,10 @@ h2::after {
     content: ""; 
     display: block; 
     height: 2px; 
-    background-color: #00457C; 
-    width: 100%; 
+    background-color: var(--primary-bg-color); 
+    width: calc(100% - 20px); /* Create space on both sides */
+    margin: 0 auto; /* Center the line */
+    border-radius: 2px; /* Slight rounding */
 }
 
 nav ul {
@@ -42,7 +52,7 @@ nav ul li {
 }
 
 nav ul li a {
-    color: #FFF5BE; 
+    color: var(--light-text-color);
     text-decoration: none;
     transition: color 0.3s;
 }
@@ -60,7 +70,7 @@ nav ul li a {
     font-size: 30px;
     background: none;
     border: none;
-    color: #FFF5BE; 
+    color: var(--light-text-color);
 }
 
 .switch {
@@ -78,31 +88,30 @@ nav ul li a {
 }
 
 .slider {
-    position: aboslute;
+    position: absolute; 
     top: 0;
     left: 0;
     right: 0;
     bottom: 0;
     background-color: #ccc;
     transition: .4s;
-    border-radius: 35px;
+    border-radius: 50%;
 }
 
 .slider:before {
     position: absolute;
     content: "";
-    height: 20px;
-    width: 20px;
+    height: 35px; /* Increased height for better visibility */
+    width: 35px; /* Increased width for better visibility */
     left: 4px;
     bottom: 4px;
-    top: 0;
     background-color: white;
     transition: .4s;
     border-radius: 50%;
 }
 
 input:checked + .slider {
-    background-color: #00457C;
+    background-color: var(--primary-bg-color);
 }
 
 input:checked + .slider:before {
@@ -113,7 +122,7 @@ input:checked + .slider:before {
     position: absolute;
     top: 13px;
     right: 60px;
-    color: #FFF5BE;
+    color: var(--light-text-color);
     font-size: .7em;
     margin-right: 10px;
 }
@@ -124,51 +133,26 @@ body.dark-mode {
     color: #fff;
 }
 
-.hero.dark-mode {
-    background-color: #444 !important;
-    color: #fff;
-}
-
-.card.dark-mode {
-    background-color: #444 !important;
-    color: #fff;
-}
-
+.hero.dark-mode,
+.card.dark-mode,
 #company-spotlights.dark-mode, 
-.spotlight.dark-mode {
-    background-color: #444 !important;
-    color: #fff;
-}
-
-.spotlight.dark-mode h3,
-.spotlight.dark-mode p,
-.spotlight.dark-mode a {
-    color: #fff !important;
-    background-color: #444 !important;
-}
-
+.spotlight.dark-mode,
 footer.dark-mode {
-    background-color: #333;
+    background-color: var(--dark-bg-color);
     color: #fff;
 }
 
-.card.dark-mode h2,
-.card.dark-mode p,
-.card.dark-mode .cta-button,
-.card.dark-mode button,
-.hero.dark-mode h2,
-.hero.dark-mode p,
-.hero.dark-mode .cta-button,
-.hero.dark-mode button,
 .spotlight.dark-mode h3,
 .spotlight.dark-mode p,
 .spotlight.dark-mode a,
+.card.dark-mode h2,
+.card.dark-mode p,
+.hero.dark-mode h2,
+.hero.dark-mode p,
 #company-spotlights.dark-mode h2,
 #company-spotlights.dark-mode p {
-    color: #fff !important;
-    background-color: #444 !important;
+    color: #fff;
 }
-/* End Dark Mode Styles */
 
 main {
     padding: 0 1%;
@@ -177,7 +161,7 @@ main {
 .hero {
     padding: 20px;
     text-align: center;
-    background-color: #e0f7fa; 
+    background-color: var(--secondary-bg-color); 
     margin-top: 5px;
 }
 
@@ -188,40 +172,20 @@ main {
     object-fit: cover; 
 }
 
-.cta-button {
+.cta-button, button {
     display: inline-block;
     margin: 10px 0 20px; 
-    background-color: #00457C; 
+    background-color: var(--primary-bg-color); 
     color: white;
     text-decoration: none;
     border-radius: 5px; 
     transition: 0.3s;
-}
-
-.cta-button:hover {
-    background-color: #00354B; 
-}
-
-header h1 {
-    color: #FFF5BE; 
-    text-align: center;
-}
-
-header h2 {
-    color: #00457C; 
-}
-
-button {
-    background-color: #00457C; 
-    color: white;
-    border: none;
-    padding: 10px 20px;
+    padding: 10px 20px; /* Consolidated button styles */
     cursor: pointer;
-    transition: 0.3s;
 }
 
-button:hover {
-    background-color: #00354B; 
+.cta-button:hover, button:hover {
+    background-color: var(--hover-bg-color); 
 }
 
 section {
@@ -230,8 +194,10 @@ section {
 
 #business-spotlight,
 #current-events,
-#company-spotlights {
-    background-color: #e0f7fa; 
+#company-spotlights,
+#visitor-questions,
+#site-purpose {
+    background-color: var(--secondary-bg-color); 
     padding: 20px;
     border-radius: 5px; 
 }
@@ -240,8 +206,9 @@ section {
     margin-top: 20px; 
 }
 
-#current-events h2 {
-    color: #00457C; 
+#current-events h2,
+#company-spotlights h2 {
+    color: var(--primary-bg-color); 
     margin-bottom: 15px; 
 }
 
@@ -252,13 +219,13 @@ section {
 
 #current-events li {
     margin-bottom: 10px; 
-    color: #333; 
+    color: var(--text-color); 
 }
 
 .more-btn {
     background: transparent; 
     border: none; 
-    color: #00457C; 
+    color: var(--primary-bg-color); 
     font-size: 0.8em; 
     cursor: pointer; 
     text-decoration: underline; 
@@ -266,7 +233,7 @@ section {
 }
 
 .more-btn:hover {
-    color: #00354B; 
+    color: var(--hover-bg-color); 
 }
 
 #weather-card {
@@ -295,69 +262,16 @@ section {
 }
 
 .additional-info {
-    border-top: 1px solid #00457C; 
+    border-top: 1px solid var(--primary-bg-color); 
     padding-top: 10px; 
-    color: #333; 
-}
-
-#company-spotlights {
-    margin-top: 20px; 
-    padding: 20px; 
-    background-color: #e0f7fa; 
-    border-radius: 5px; 
-}
-
-#company-spotlights h2 {
-    color: #00457C; 
-    margin-bottom: 15px; 
-    padding-bottom: 10px; 
-}
-
-.spotlight {
-    background-color: #f9f9f9; 
-    padding: 15px;
-    margin-bottom: 10px; 
-    border: 1px solid #ddd; 
-    border-radius: 5px; 
-    display: flex; 
-    align-items: center; 
-    transition: transform 0.2s; 
-}
-
-.spotlight:hover {
-    transform: scale(1.02); 
-}
-
-.company-icon {
-    width: 80px; 
-    margin-right: 15px; 
-}
-
-.company-info h3, 
-.company-info p {
-    color: #333; 
-    margin: 5px; 
-}
-
-.company-info a {
-    color: #00457C; 
-    text-decoration: none; 
-}
-
-.company-info a:hover {
-    text-decoration: underline; 
-}
-
-#visitor-questions,
-#site-purpose {
-    padding: 20px;
-    background-color: #e0f7fa;
+    margin: 0 2%;
+    color: var(--text-color); 
 }
 
 footer {
     text-align: center;
     padding: 10px 0;
-    background-color: #00457C; 
-    color: #FFF5BE; 
+    background-color: var(--primary-bg-color); 
+    color: var(--light-text-color); 
     width: 100%;
 }
