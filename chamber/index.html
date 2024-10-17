@@ -38,7 +38,7 @@
             <img src="images/hero-image.jpg" alt="Hero Image" class="hero-image">
         </section>
 
-        <section id="business-spotlight">
+        <section id="business-spotlight" class="card">
             <h2>Business Spotlight</h2>
             <p>Learn about our featured businesses and what they offer to the community.</p>
             <button id="update-about-btn">Update About Section</button>
@@ -48,42 +48,62 @@
             </div>
         </section>
 
-        <section id="temporary-content">
-            <p>CONTENT CONTENT CONTENT CONTENT CONTENT CONTENT CONTENT CONTENT CONTENT CONTENT CONTENT</p>
-        </section>
-
-        <section id="current-events">
-            <h2>Current Events</h2>
+        <section id="current-events" class="card">
+            <h2>Local Events</h2>
             <p>Stay tuned for upcoming events!</p>
             <ul>
-                <li>Event 1: Description of Event 1</li>
-                <li>Event 2: Description of Event 2</li>
-                <li>Event 3: Description of Event 3</li>
+                <li>
+                    <p><strong>Harvest Festival and Craft Fair</strong></p>
+                    <p>
+                        Celebrate the beauty of autumn
+                        <span class="hidden-description hidden" style="display: none;">
+                            at our Harvest Festival! Join us for a day filled with local artisan crafts, delicious seasonal foods, and fun activities for the whole family. Enjoy hayrides, pumpkin picking, and live entertainment throughout the day. Don’t miss out on the chance to support our local vendors and enjoy the festive spirit!
+                        </span>
+                        <button class="more-btn" onclick="toggleDescription(this)">More</button>
+                    </p>
+                </li>
+                <li>
+                    <p><strong>Halloween Parade and Costume Contest</strong></p>
+                    <p>
+                        Come and showcase your best Halloween costume
+                        <span class="hidden-description hidden" style="display: none;">
+                            at our annual parade. Prizes will be awarded for the best costumes, and there will be plenty of treats for everyone. The parade starts at 4:00 p.m. on Main Street. Join us for a spooky evening filled with fun activities, live entertainment, and community spirit. Bring your family and friends for a night to remember!
+                        </span>
+                        <button class="more-btn" onclick="toggleDescription(this)">More</button>
+                    </p>
+                </li>
+                <li>
+                    <p><strong>Country Rodeo and Chili Cook-off</strong></p>
+                    <p>
+                        Saddle up for a day of fun
+                        <span class="hidden-description hidden" style="display: none;">
+                            at the Country Rodeo! Watch rodeo events and taste some of the best chili in town. The cook-off begins at 11:00 a.m., with rodeo events running throughout the afternoon. Enjoy live music, cowboy games, and family-friendly activities throughout the day. It’s a great opportunity to enjoy the outdoors and taste delicious food!
+                        </span>
+                        <button class="more-btn" onclick="toggleDescription(this)">More</button>
+                    </p>
+                </li>
             </ul>
-        </section>  
+        </section>                  
         
-        <section id="weather-card">
+        <section id="weather-card" class="card">
             <h2>Weather Forecast</h2>
-            <p>Current weather in San Diego: 75°F, Sunny</p>
-        </section>   
-        
-        <section id="company-spotlights">
-            <h2>Company Spotlights</h2>
-            <div class="spotlight">
-                <h3>Company 1</h3>
-                <p>Description of Company 1.</p>
+            <div class="weather-info">
+                <div class="weather-icon">
+                    <img src="images/weather.webp" alt="Sunny" /> <!-- Replace with a dynamic icon based on weather -->
+                </div>
+                <div class="weather-details">
+                    <p class="temperature">75°F</p>
+                    <p class="condition">Sunny</p>
+                    <p class="location">San Diego, CA</p>
+                </div>
             </div>
-            <div class="spotlight">
-                <h3>Company 2</h3>
-                <p>Description of Company 2.</p>
+            <div class="additional-info">
+                <p><strong>High:</strong> 80°F | <strong>Low:</strong> 65°F</p>
+                <p><strong>Humidity:</strong> 50% | <strong>Wind:</strong> 5 mph</p>
             </div>
-            <div class="spotlight">
-                <h3>Company 3</h3>
-                <p>Description of Company 3.</p>
-            </div>
-        </section>        
+        </section>                              
 
-        <section id="visitor-questions">
+        <section id="visitor-questions" class="card">
             <h2>Common Visitor Questions</h2>
             <ul>
                 <li>What events and programs does the San Diego Chamber offer for small businesses?</li>
@@ -92,10 +112,41 @@
             </ul>
         </section>
 
-        <section id="site-purpose">
+        <section id="site-purpose" class="card">
             <h2>Site Purpose</h2>
             <p>The purpose of the website is to promote local businesses and offer networking opportunities through events, partnerships, and resources. It also aims to provide information about San Diego's economic development, attractions, and community engagement to attract tourists and new residents.</p>
         </section>
+
+        <section id="company-spotlights">
+            <h2>Company Spotlights</h2>   
+            <div class="spotlight">
+                <img src="images/sunnycoffee.webp" alt="Company 1 Icon" class="company-icon" />
+                <div class="company-info">
+                    <h3>Sunny Coffee Roasters</h3>
+                    <p>Sunny Coffee Roasters is dedicated to providing the freshest coffee sourced from sustainable farms. Our blends are crafted with passion to energize your day.</p>
+                    <p><strong>Contact:</strong> (619) 555-0123</p>
+                    <p><strong>Website:</strong> <a href="https://sunnycoffeeroasters.com" target="_blank">sunnycoffeeroasters.com</a></p>
+                </div>
+            </div>     
+            <div class="spotlight">
+                <img src="images/greenthumb.png" alt="Company 2 Icon" class="company-icon" />
+                <div class="company-info">
+                    <h3>Green Thumb Landscaping</h3>
+                    <p>Green Thumb Landscaping offers professional landscaping services that enhance the beauty of your home or business. We specialize in eco-friendly solutions.</p>
+                    <p><strong>Contact:</strong> (619) 555-0345</p>
+                    <p><strong>Website:</strong> <a href="https://greenthumblandscaping.com" target="_blank">greenthumblandscaping.com</a></p>
+                </div>
+            </div>
+            <div class="spotlight">
+                <img src="images/seaside.png" alt="Company 3 Icon" class="company-icon" />
+                <div class="company-info">
+                    <h3>Seaside Adventure Tours</h3>
+                    <p>Join Seaside Adventure Tours for exciting outdoor experiences, including kayaking, snorkeling, and beach clean-ups. Explore San Diego’s beautiful coastline with us!</p>
+                    <p><strong>Contact:</strong> (619) 555-0567</p>
+                    <p><strong>Website:</strong> <a href="https://seasideadventuretours.com" target="_blank">seasideadventuretours.com</a></p>
+                </div>
+            </div>
+        </section> 
     </main>
 
     <footer>

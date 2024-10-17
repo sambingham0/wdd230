@@ -40,5 +40,6 @@ button.addEventListener('click', () => {
     } else {
         // If the input is empty, show an alert or provide feedback
         errorMessage.textContent = 'Please enter a book and chapter.';
+        input.focus();
     }
 });

@@ -44,18 +44,21 @@
         line-height: 1.5; /* Better readability */
     }
 
+    #business-spotlight {
+        order: 2;
+        margin-top: 20px;
+    }
+
     /* Order of Sections */
     #current-events {
-        order: 1; /* Current Events section first */
+        order: 3; /* Current Events section first */
     }
 
     #weather-card {
-        order: 2; /* Weather section second */
-        max-width: 50px;
-        max-height: 300px;
+        order: 4; /* Weather section second */
     }
 
     #company-spotlights {
-        order: 3; /* Company Spotlights last */
+        order: 5; /* Company Spotlights last */
     }
 }

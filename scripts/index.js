@@ -14,4 +14,3 @@ hamButton.addEventListener('click', () => {
     navigation.classList.toggle('show'); // Toggle the menu visibility
     hamButton.classList.toggle('open'); // Toggle the open class
 });
-

@@ -2,17 +2,31 @@ body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #FFF5BE;
-    color: #333;
+    background-color: #FFF5BE; /* Original background color */
+    color: #333; /* Original text color */
 }
 
 header {
-    background-color: #00457C;
+    background-color: #00457C; /* Original header color */
     color: white;
     padding: 10px;
     text-align: center;
     width: 100%;
     box-sizing: border-box;
+    border-radius: 5px; /* Rounds the corners */
+}
+
+h2 {
+    position: relative; /* Positioning context for the pseudo-element */
+    padding-bottom: 10px; /* Space below the text */
+}
+
+h2::after {
+    content: ""; /* Creates an empty element */
+    display: block; /* Makes it a block element */
+    height: 2px; /* Thickness of the line */
+    background-color: #00457C; /* Original line color */
+    width: 100%; /* Full width of the heading */
 }
 
 nav ul {
@@ -28,13 +42,13 @@ nav ul li {
 }
 
 nav ul li a {
-    color: #FFF5BE;
+    color: #FFF5BE; /* Original link color */
     text-decoration: none;
     transition: color 0.3s;
 }
 
 nav ul li a:hover {
-    color: #FFF5BE;
+    color: #FFF5BE; /* Original link hover color */
 }
 
 #nav-menu {
@@ -51,7 +65,7 @@ nav ul li a:hover {
     font-size: 30px;
     background: none;
     border: none;
-    color: #FFF5BE;
+    color: #FFF5BE; /* Original hamburger color */
 }
 
 main {
@@ -62,7 +76,8 @@ main {
 .hero {
     padding: 20px;
     text-align: center;
-    background-color: #e0f7fa;
+    background-color: #e0f7fa; /* Original hero background */
+    margin-top: 5px;
 }
 
 .hero-image {
@@ -74,9 +89,9 @@ main {
 
 .cta-button {
     display: inline-block;
-    margin-top: 15px; /* Add space above the button */
-    padding: 10px 20px;
-    background-color: #00457C;
+    margin-top: 10px; /* Add space above the button */
+    margin-bottom: 20px;
+    background-color: #00457C; /* Original button color */
     color: white;
     text-decoration: none;
     border-radius: 5px; /* Rounds the corners */
@@ -88,16 +103,16 @@ main {
 }
 
 header h1 {
-    color: #FFF5BE;
+    color: #FFF5BE; /* Original header h1 color */
     text-align: center;
 }
 
 header h2 {
-    color: #00457C;
+    color: #00457C; /* Original header h2 color */
 }
 
 button {
-    background-color: #00457C;
+    background-color: #00457C; /* Original button color */
     color: white;
     border: none;
     padding: 10px 20px;
@@ -106,13 +121,7 @@ button {
 }
 
 button:hover {
-    background-color: #00354B;
-}
-
-#temporary-content {
-    color: black;
-    background-color: #e0f7fa;
-    padding: 20px;
+    background-color: #00354B; /* Darken on hover */
 }
 
 section {
@@ -120,19 +129,20 @@ section {
 }
 
 #business-spotlight {
-    background-color: #e0f7fa;
+    background-color: #e0f7fa; /* Original background */
     padding: 20px;
+    border-radius: 5px; /* Rounds the corners */
 }
 
 #current-events {
-    background-color: #e0f7fa; /* Light blue background */
+    background-color: #e0f7fa; /* Original background */
     padding: 20px;
     border-radius: 5px; /* Rounded corners */
     margin-top: 20px; /* Space above the section */
 }
 
 #current-events h2 {
-    color: #00457C; /* Title color */
+    color: #00457C; /* Original title color */
     margin-bottom: 15px; /* Space below the title */
 }
 
@@ -143,7 +153,22 @@ section {
 
 #current-events li {
     margin-bottom: 10px; /* Space between list items */
-    color: #333; /* Text color */
+    color: #333; /* Original text color */
+}
+
+.more-btn {
+    background-color: transparent; /* No background */
+    border: none; /* Remove border */
+    color: #00457C; /* Original button color */
+    font-size: 0.8em; /* Smaller font size */
+    cursor: pointer; /* Pointer cursor on hover */
+    text-decoration: underline; /* Underline for a link-like appearance */
+    padding: 0; /* No padding */
+    margin: 5px 0; /* Small margin for spacing */
+}
+
+.more-btn:hover {
+    color: #00354B; /* Darker color on hover */
 }
 
 #weather-card {
@@ -154,33 +179,45 @@ section {
     text-align: center; /* Center the text */
 }
 
-#weather-card h2 {
-    color: #00457C; /* Title color */
-    margin-bottom: 15px; /* Space below the title */
+.weather-info {
+    display: flex; /* Use flexbox for alignment */
+    justify-content: center; /* Center content */
+    align-items: center; /* Align items vertically */
+    margin-bottom: 10px; /* Space below the weather info */
 }
 
-#weather-card p {
-    font-size: 1.2em; /* Slightly larger font for weather info */
-    color: #333; /* Text color */
+.weather-icon img {
+    width: 100px; /* Size of the weather icon */
+    height: auto; /* Maintain aspect ratio */
 }
 
-#visitor-questions {
-    background-color: #e0f7fa;
-    padding: 20px;
+.weather-details {
+    margin-left: 15px; /* Space between icon and text */
+    margin: 0;
+}
+
+.temperature, .condition, .location {
+    margin: 5px;
+}
+
+.additional-info {
+    border-top: 1px solid #00457C; /* Top border for separation */
+    padding-top: 10px; /* Space above additional info */
+    color: #333; /* Original text color */
+    font-size: 1em; /* Normal size for additional info */
 }
 
 #company-spotlights {
     margin-top: 20px; /* Space above the section */
+    padding: 20px; /* Padding around the section */
+    background-color: #e0f7fa; /* Original background */
+    border-radius: 5px; /* Rounded corners */
 }
 
 #company-spotlights h2 {
-    color: #00457C; /* Title color */
+    color: #00457C; /* Original title color */
     margin-bottom: 15px; /* Space below the title */
-}
-
-#site-purpose {
-    background-color: #e0f7fa;
-    padding: 20px;
+    padding-bottom: 10px; /* Space below heading */
 }
 
 .spotlight {
@@ -189,6 +226,8 @@ section {
     margin-bottom: 10px; /* Space between spotlights */
     border: 1px solid #ddd; /* Light border */
     border-radius: 5px; /* Rounded corners */
+    display: flex; /* Flexbox layout */
+    align-items: center; /* Center items vertically */
     transition: transform 0.2s; /* Transition effect */
 }
 
@@ -196,32 +235,46 @@ section {
     transform: scale(1.02); /* Slightly enlarge on hover */
 }
 
-.spotlight h3 {
-    color: #00457C; /* Title color for company */
-    margin-bottom: 10px; /* Space below company name */
+.company-icon {
+    width: 80px; /* Set a fixed width for icons */
+    height: auto; /* Maintain aspect ratio */
+    margin-right: 15px; /* Space between icon and text */
 }
 
-.spotlight p {
-    color: #333; /* Text color */
+.company-info h3 {
+    color: #333; /* Original company title color */
+    margin: 5px; /* Space below company name */
 }
 
-#company-spotlights {
-    margin-top: 20px;
+.company-info p {
+    color: #333; /* Original company text color */
+    margin: 5px 0; /* Space between paragraphs */
 }
 
-.spotlight {
-    background-color: #f9f9f9;
-    padding: 15px;
-    margin-bottom: 10px;
-    border: 1px solid #ddd;
-    border-radius: 5px;
+.company-info a {
+    color: #00457C; /* Original link color */
+    text-decoration: none; /* Remove underline */
+}
+
+.company-info a:hover {
+    text-decoration: underline; /* Underline on hover */
+}
+
+#visitor-questions {
+    background-color: #f9f9f9; /* Original background */
+    padding: 20px;
+}
+
+#site-purpose {
+    background-color: #f9f9f9; /* Original background */
+    padding: 20px;
 }
 
 footer {
     text-align: center;
     padding: 10px 0;
-    background-color: #00457C;
-    color: white;
+    background-color: #00457C; /* Original footer color */
+    color: #FFF5BE; /* Original footer text color */
     position: relative;
     bottom: 0;
     width: 100%;

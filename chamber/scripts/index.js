@@ -15,3 +15,14 @@ menuToggle.addEventListener('click', () => {
     const isActive = navMenu.classList.contains('active');
     menuToggle.setAttribute('aria-expanded', isActive); // Update ARIA attribute
 });
+
+function toggleDescription(button) {
+    const hiddenText = button.previousElementSibling; // Get the span with hidden text
+    if (hiddenText.style.display === "none") {
+        hiddenText.style.display = "inline"; // Show the hidden text
+        button.textContent = "Less"; // Change button text to "Less"
+    } else {
+        hiddenText.style.display = "none"; // Hide the text again
+        button.textContent = "More"; // Change button text to "More"
+    }
+}
