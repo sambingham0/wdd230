@@ -2,31 +2,29 @@ body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #FFF5BE; /* Original background color */
-    color: #333; /* Original text color */
+    background-color: #FFF5BE; 
+    color: #333;
 }
 
 header {
-    background-color: #00457C; /* Original header color */
+    background-color: #00457C; 
     color: white;
     padding: 10px;
     text-align: center;
-    width: 100%;
-    box-sizing: border-box;
-    border-radius: 5px; /* Rounds the corners */
+    border-radius: 5px; 
 }
 
 h2 {
-    position: relative; /* Positioning context for the pseudo-element */
-    padding-bottom: 10px; /* Space below the text */
+    position: relative; 
+    padding-bottom: 10px; 
 }
 
 h2::after {
-    content: ""; /* Creates an empty element */
-    display: block; /* Makes it a block element */
-    height: 2px; /* Thickness of the line */
-    background-color: #00457C; /* Original line color */
-    width: 100%; /* Full width of the heading */
+    content: ""; 
+    display: block; 
+    height: 2px; 
+    background-color: #00457C; 
+    width: 100%; 
 }
 
 nav ul {
@@ -42,18 +40,13 @@ nav ul li {
 }
 
 nav ul li a {
-    color: #FFF5BE; /* Original link color */
+    color: #FFF5BE; 
     text-decoration: none;
     transition: color 0.3s;
 }
 
-nav ul li a:hover {
-    color: #FFF5BE; /* Original link hover color */
-}
-
 #nav-menu {
     display: none;
-    flex-direction: column;
 }
 
 #nav-menu.active {
@@ -65,54 +58,52 @@ nav ul li a:hover {
     font-size: 30px;
     background: none;
     border: none;
-    color: #FFF5BE; /* Original hamburger color */
+    color: #FFF5BE; 
 }
 
 main {
-    padding-left: 1%;
-    padding-right: 1%;
+    padding: 0 1%;
 }
 
 .hero {
     padding: 20px;
     text-align: center;
-    background-color: #e0f7fa; /* Original hero background */
+    background-color: #e0f7fa; 
     margin-top: 5px;
 }
 
 .hero-image {
-    width: 100%; /* Makes it responsive */
-    height: auto; /* Maintains aspect ratio */
-    max-height: 300px; /* Sets a max height for the image */
-    object-fit: cover; /* Ensures the image covers the area */
+    width: 100%; 
+    height: auto; 
+    max-height: 300px; 
+    object-fit: cover; 
 }
 
 .cta-button {
     display: inline-block;
-    margin-top: 10px; /* Add space above the button */
-    margin-bottom: 20px;
-    background-color: #00457C; /* Original button color */
+    margin: 10px 0 20px; 
+    background-color: #00457C; 
     color: white;
     text-decoration: none;
-    border-radius: 5px; /* Rounds the corners */
+    border-radius: 5px; 
     transition: background-color 0.3s;
 }
 
 .cta-button:hover {
-    background-color: #00354B; /* Darken on hover */
+    background-color: #00354B; 
 }
 
 header h1 {
-    color: #FFF5BE; /* Original header h1 color */
+    color: #FFF5BE; 
     text-align: center;
 }
 
 header h2 {
-    color: #00457C; /* Original header h2 color */
+    color: #00457C; 
 }
 
 button {
-    background-color: #00457C; /* Original button color */
+    background-color: #00457C; 
     color: white;
     border: none;
     padding: 10px 20px;
@@ -121,79 +112,73 @@ button {
 }
 
 button:hover {
-    background-color: #00354B; /* Darken on hover */
+    background-color: #00354B; 
 }
 
 section {
     margin-bottom: 20px;
 }
 
-#business-spotlight {
-    background-color: #e0f7fa; /* Original background */
+#business-spotlight,
+#current-events,
+#company-spotlights {
+    background-color: #e0f7fa; 
     padding: 20px;
-    border-radius: 5px; /* Rounds the corners */
+    border-radius: 5px; 
 }
 
 #current-events {
-    background-color: #e0f7fa; /* Original background */
-    padding: 20px;
-    border-radius: 5px; /* Rounded corners */
-    margin-top: 20px; /* Space above the section */
+    margin-top: 20px; 
 }
 
 #current-events h2 {
-    color: #00457C; /* Original title color */
-    margin-bottom: 15px; /* Space below the title */
+    color: #00457C; 
+    margin-bottom: 15px; 
 }
 
 #current-events ul {
-    list-style-type: disc; /* Bullet points for the list */
-    padding-left: 20px; /* Indentation for list items */
+    list-style-type: disc; 
+    padding-left: 20px; 
 }
 
 #current-events li {
-    margin-bottom: 10px; /* Space between list items */
-    color: #333; /* Original text color */
+    margin-bottom: 10px; 
+    color: #333; 
 }
 
 .more-btn {
-    background-color: transparent; /* No background */
-    border: none; /* Remove border */
-    color: #00457C; /* Original button color */
-    font-size: 0.8em; /* Smaller font size */
-    cursor: pointer; /* Pointer cursor on hover */
-    text-decoration: underline; /* Underline for a link-like appearance */
-    padding: 0; /* No padding */
-    margin: 5px 0; /* Small margin for spacing */
+    background: transparent; 
+    border: none; 
+    color: #00457C; 
+    font-size: 0.8em; 
+    cursor: pointer; 
+    text-decoration: underline; 
+    margin: 5px 0; 
 }
 
 .more-btn:hover {
-    color: #00354B; /* Darker color on hover */
+    color: #00354B; 
 }
 
 #weather-card {
-    background-color: #ffeb3b; /* Yellow background for visibility */
-    padding: 20px;
-    border-radius: 5px; /* Rounded corners */
-    margin-top: 20px; /* Space above the section */
-    text-align: center; /* Center the text */
+    background-color: #ffeb3b; 
+    border-radius: 5px; 
+    text-align: center; 
 }
 
 .weather-info {
-    display: flex; /* Use flexbox for alignment */
-    justify-content: center; /* Center content */
-    align-items: center; /* Align items vertically */
-    margin-bottom: 10px; /* Space below the weather info */
+    display: flex; 
+    justify-content: center; 
+    align-items: center; 
+    margin-bottom: 10px; 
 }
 
 .weather-icon img {
-    width: 100px; /* Size of the weather icon */
-    height: auto; /* Maintain aspect ratio */
+    width: 100px; 
 }
 
 .weather-details {
-    margin-left: 15px; /* Space between icon and text */
-    margin: 0;
+    margin-left: 15px; 
 }
 
 .temperature, .condition, .location {
@@ -201,81 +186,69 @@ section {
 }
 
 .additional-info {
-    border-top: 1px solid #00457C; /* Top border for separation */
-    padding-top: 10px; /* Space above additional info */
-    color: #333; /* Original text color */
-    font-size: 1em; /* Normal size for additional info */
+    border-top: 1px solid #00457C; 
+    padding-top: 10px; 
+    color: #333; 
 }
 
 #company-spotlights {
-    margin-top: 20px; /* Space above the section */
-    padding: 20px; /* Padding around the section */
-    background-color: #e0f7fa; /* Original background */
-    border-radius: 5px; /* Rounded corners */
+    margin-top: 20px; 
+    padding: 20px; 
+    background-color: #e0f7fa; 
+    border-radius: 5px; 
 }
 
 #company-spotlights h2 {
-    color: #00457C; /* Original title color */
-    margin-bottom: 15px; /* Space below the title */
-    padding-bottom: 10px; /* Space below heading */
+    color: #00457C; 
+    margin-bottom: 15px; 
+    padding-bottom: 10px; 
 }
 
 .spotlight {
-    background-color: #f9f9f9; /* Light grey background for each spotlight */
+    background-color: #f9f9f9; 
     padding: 15px;
-    margin-bottom: 10px; /* Space between spotlights */
-    border: 1px solid #ddd; /* Light border */
-    border-radius: 5px; /* Rounded corners */
-    display: flex; /* Flexbox layout */
-    align-items: center; /* Center items vertically */
-    transition: transform 0.2s; /* Transition effect */
+    margin-bottom: 10px; 
+    border: 1px solid #ddd; 
+    border-radius: 5px; 
+    display: flex; 
+    align-items: center; 
+    transition: transform 0.2s; 
 }
 
 .spotlight:hover {
-    transform: scale(1.02); /* Slightly enlarge on hover */
+    transform: scale(1.02); 
 }
 
 .company-icon {
-    width: 80px; /* Set a fixed width for icons */
-    height: auto; /* Maintain aspect ratio */
-    margin-right: 15px; /* Space between icon and text */
+    width: 80px; 
+    margin-right: 15px; 
 }
 
-.company-info h3 {
-    color: #333; /* Original company title color */
-    margin: 5px; /* Space below company name */
-}
-
+.company-info h3, 
 .company-info p {
-    color: #333; /* Original company text color */
-    margin: 5px 0; /* Space between paragraphs */
+    color: #333; 
+    margin: 5px; 
 }
 
 .company-info a {
-    color: #00457C; /* Original link color */
-    text-decoration: none; /* Remove underline */
+    color: #00457C; 
+    text-decoration: none; 
 }
 
 .company-info a:hover {
-    text-decoration: underline; /* Underline on hover */
+    text-decoration: underline; 
 }
 
-#visitor-questions {
-    background-color: #f9f9f9; /* Original background */
-    padding: 20px;
-}
-
+#visitor-questions,
 #site-purpose {
-    background-color: #f9f9f9; /* Original background */
     padding: 20px;
+    background-color: #e0f7fa;
 }
 
 footer {
     text-align: center;
     padding: 10px 0;
-    background-color: #00457C; /* Original footer color */
-    color: #FFF5BE; /* Original footer text color */
-    position: relative;
-    bottom: 0;
+    background-color: #00457C; 
+    color: #FFF5BE; 
     width: 100%;
 }
