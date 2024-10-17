@@ -4,6 +4,7 @@ body {
     padding: 0;
     background-color: #FFF5BE; 
     color: #333;
+    text-size-adjust: none;
 }
 
 header {
@@ -110,7 +111,7 @@ input:checked + .slider:before {
 .dark-mode-label {
     position: absolute;
     top: 13px;
-    right: 60px; /* Adjust this to place the label appropriately */
+    right: 60px;
     color: #FFF5BE;
     font-size: .7em;
     margin-right: 10px;
@@ -193,7 +194,7 @@ main {
     color: white;
     text-decoration: none;
     border-radius: 5px; 
-    transition: background-color 0.3s;
+    transition: 0.3s;
 }
 
 .cta-button:hover {
@@ -215,7 +216,7 @@ button {
     border: none;
     padding: 10px 20px;
     cursor: pointer;
-    transition: background-color 0.3s;
+    transition: 0.3s;
 }
 
 button:hover {
