@@ -89,6 +89,24 @@ main {
     text-align: center;
 }
 
+#temple {
+    position: relative;
+    width: 100%;
+    height: auto;
+}
+
+.temple-label {
+    position: absolute;
+    top: 5%;
+    left: 40%; /* Adjust the horizontal position of the label */
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white; /* Text color */
+    padding: 5px 10px; /* Padding around the text */
+    font-size: .5rem;
+    white-space: nowrap; /* Prevent the text from wrapping */
+    border-radius: 5px;
+}
+
 .card {
     border: 1px solid #ccc;
     padding: 15px;
