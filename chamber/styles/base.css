@@ -77,8 +77,10 @@ nav ul li a {
     position: absolute;
     top: 10px;
     right: 10px;
-    width: 60px;
-    height: 35px;
+    width: 45px;
+    height: 20px;
+    background-color: white;
+    border-radius: 50%;
 }
 
 .switch input {
@@ -88,30 +90,27 @@ nav ul li a {
 }
 
 .slider {
-    position: absolute; 
+    position: absolute;
     top: 0;
     left: 0;
     right: 0;
     bottom: 0;
     background-color: #ccc;
     transition: .4s;
-    border-radius: 50%;
+    border-radius: 35px;
 }
 
 .slider:before {
     position: absolute;
     content: "";
-    height: 35px; /* Increased height for better visibility */
-    width: 35px; /* Increased width for better visibility */
-    left: 4px;
+    height: 20px;
+    width: 20px;
+    left: 0px;
     bottom: 4px;
+    top: 0;
     background-color: white;
     transition: .4s;
     border-radius: 50%;
-}
-
-input:checked + .slider {
-    background-color: var(--primary-bg-color);
 }
 
 input:checked + .slider:before {
@@ -159,17 +158,26 @@ main {
 }
 
 .hero {
+    display: flex;
+    flex-direction: column;
     padding: 20px;
     text-align: center;
     background-color: var(--secondary-bg-color); 
     margin-top: 5px;
 }
 
-.hero-image {
-    width: 100%; 
+.hero img {
+    max-width: 50%;
     height: auto; 
-    max-height: 300px; 
+    width: auto;
     object-fit: cover; 
+}
+
+.hero-img-text {
+    position: absolute;
+    top: 62%;
+    left: 30%;
+    background-color: red;
 }
 
 .cta-button, button {
@@ -222,6 +230,10 @@ section {
     color: var(--text-color); 
 }
 
+.spotlight img {
+    max-width: 20%;
+}
+
 .more-btn {
     background: transparent; 
     border: none; 
@@ -257,7 +269,7 @@ section {
     margin-left: 15px; 
 }
 
-.temperature, .condition, .location {
+.temperature, .windchill .condition, .location {
     margin: 5px;
 }
 

@@ -41,3 +41,18 @@ darkModeToggle.addEventListener('change', () => {
     });
     document.querySelector('footer').classList.toggle('dark-mode');
 });
+
+function heroTextOverlay() {
+    const heroText = document.getElementsByClassName('hero-img-text')[0];
+    const screenWidth = window.innerWidth;
+
+    if (screenWidth <= 600) {
+        heroText.innerHTML = '<p>small</p>';
+    } else if (screenWidth <= 1000) {
+        heroText.innerHTML = '<p>medium</p>';
+    } else {
+        heroText.innerHTML = '<p>large</p>';
+    }
+}
+window.onload = heroTextOverlay;
+window.onresize = heroTextOverlay;
