@@ -1,0 +1,29 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: black;
+}
+
+h1 {
+    color: white;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+img {
+    max-width: 100%; /* Ensure images are responsive */
+    height: auto; /* Maintain aspect ratio */
+    margin: 10px 0; /* Space between images */
+    opacity: 0; /* Start hidden */
+    transition: opacity 1s; /* Smooth transition for opacity */
+}
+
+img.loaded {
+    opacity: 1;
+}
