@@ -3,7 +3,7 @@ const input = document.querySelector('#favchap');
 const button = document.querySelector('button');
 const list = document.querySelector('#list');
 const errorMessage = document.querySelector('#error-message');
-const chaptersArray = getChapterList() || [];
+let chaptersArray = getChapterList() || [];
 
 chaptersArray.forEach(chapter => {
     displayList(chapter);
@@ -30,7 +30,7 @@ button.addEventListener('click', () => {
 
 function displayList(item) {
     // Create a new list item (li) element
-    const li = document.createElement('li');
+    let li = document.createElement('li');
     const deleteButton = document.createElement('button');
 
     li.textContent = item;
