@@ -97,4 +97,58 @@
         grid-row: 3/4;
         grid-column: 1/4;
     }
+
+    /* discover page styles */
+
+    #discover-main {
+        display: grid;
+        grid-template-columns: 1fr 2fr;
+    }
+
+    #sidebar {
+        grid-column: 1;
+        grid-row: 1;
+        display: grid;
+        grid-template-rows: 1;
+    }
+
+    #sidebar img, #discover-content img {
+        width: 100%;
+    }
+
+    #discover-content {
+        grid-column: 2;
+        grid-row: 1;
+        display: grid;
+        grid-template-rows: auto; /* Ensure it adapts to content size */
+        margin-top: 0; /* No margin at the top */
+        padding-top: 0; /* No padding at the top */
+    }    
+
+    #discover-content figure {
+        margin: 0; /* Remove margin from figure */
+        padding: 0; /* Remove padding from figure */
+    }
+    
+    #discover-content img {
+        display: block; /* Ensures there are no extra spaces */
+        width: 100%; /* Make sure images take full width */
+        margin: 0; /* Remove margin from images */
+        padding: 0; /* Remove padding from images */
+        transition: opacity 0.3s ease; /* Keep transition for hover effect */
+    }    
+    
+    #discover-content img:hover {
+        opacity: 0.8;
+    }
+
+    #welcome-message {
+        color:;
+        font-size: 1em; /* Adjust the font size as needed */
+        margin: 10px 0; /* Add some margin for spacing */
+        padding: 0; /* No padding */
+        text-align: center; /* Center the text if desired */
+    }
+    
 }
+

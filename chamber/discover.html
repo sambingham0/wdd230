@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>San Diego Chamber of Commerce Site Plan</title>
+    <meta name="description" content="WDD 230 - Web Frontend Development, Sam Bingham, chamber site">
+    <meta name="author" content="Sam Bingham">
+    <meta property="og:title" content="WDD230"/>
+    <meta property="og:type" content="website"/>
+    <meta property="og:url" content="https://sambingham0.github.io/wdd230/" />
+    <meta property="og:image" content="https://stock.adobe.com/images/beautiful-sunrise-lookin-over-the-helena-valley-and-the-catherdral/300432549" />
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/base.css">
+    <link rel="stylesheet" href="styles/medium.css">
+    <link rel="stylesheet" href="styles/larger.css">
+    <link rel="icon" href="favicon.ico">
+</head>
+<body>
+    <header>
+        <h1>Welcome to the San Diego Chamber of Commerce</h1>
+        <nav>
+            <button id="menu-toggle" class="hamburger">&#9776;</button> <!-- Hamburger icon -->
+            <ul id="nav-menu">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="discover.html">Discover</a></li>
+                <li><a href="directory.html">Directory</a></li>
+                <li><a href="join.html">Join</a></li>
+            </ul>
+        </nav>
+        <label for="darkModeToggle" class="dark-mode-label">Dark Mode</label>
+        <label class="switch">
+            <input type="checkbox" id="darkModeToggle">
+            <span class="slider"></span>
+        </label>
+    </header>    
+
+    <main id="discover-main">
+        <section id="sidebar">
+            <section id="welcome-message">
+                <h2><span id="visits"></span></h2>
+            </section>
+            <section id="discover-info" class="sidebar-section">
+                <h1>San Diego News</h2>
+                <p>Stay updated with the latest happenings in San Diego!</p>
+                <img src="images/news.webp" alt="News image" loading="lazy">
+                <p>In today's news, we celebrate the opening of new local businesses!</p>
+            </section>
+            <section id="demographics" class="sidebar-section">
+                <h1>Demographics</h2>
+                <ul>
+                    <li>Population: 1.4 million</li>
+                    <li>Median Age: 35.5 years</li>
+                    <li>Average Income: $80,000</li>
+                </ul>
+            </section>
+            <section id="community-resources" class="sidebar-section">
+                <h1>Community Resources</h2>
+                <ul>
+                    <li><a href="https://www.sandiego.govv/libraries">San Diego Public Library</a></li>
+                    <li><a href="https://www.sandiego.govv/parks-and-recreation">Parks & Recreation Department</a></li>
+                    <li><a href="https://www.sandiego.govv/emergency-services">Emergency Services</a></li>
+                </ul>
+            </section>
+            <section id="discover-calendar" class="sidebar-section">
+                <h1>This Month's Events</h2>
+                <ul>
+                    <li>November 1: Farmers Market</li>
+                    <li>November 10: Art Walk</li>
+                    <li>November 15: Chamber Networking Event</li>
+                </ul>
+            </section>
+            <section id="discover-business-spotlight" class="sidebar-section">
+                <h1>Business Spotlight</h2>
+                <p><strong>Local Coffee Shop:</strong> A cozy place to grab your morning brew!</p>
+                <p><a href="http://localcoffeeshop.comm">Visit their website</a></p>
+            </section>
+            <section id="testimonials" class="sidebar-section">
+                <h1>Testimonials</h2>
+                <blockquote>"San Diego is the best city! The beaches are stunning!" - Local Resident</blockquote>
+            </section>
+        </section>
+
+        <section id="discover-content">
+            <h2>Local Attractions</h2>
+            <figure>
+                <img src="images/beach.webp" alt="Beautiful beach" loading="lazy">
+                <figcaption>Explore San Diego's stunning beaches!</figcaption>
+            </figure>
+            <figure>
+                <img src="images/park.jpg" alt="Balboa Park" loading="lazy">
+                <figcaption>Visit your local Park!</figcaption>
+            </figure>
+            <figure>
+                <img src="images/zoo.jpg" alt="San Diego Zoo" loading="lazy">
+                <figcaption>Home to over 3,500 animals!</figcaption>
+            </figure>
+            <figure>
+                <img src="images/museum.jpg" alt="Museum of Man" loading="lazy">
+                <figcaption>Discover rich cultural exhibits!</figcaption>
+            </figure>
+            <figure>
+                <img src="images/harbor.jpg" alt="San Diego Harbor" loading="lazy">
+                <figcaption>Take a harbor cruise!</figcaption>
+            </figure>
+            <figure>
+                <img src="images/food.jpg" alt="Local Cuisine" loading="lazy">
+                <figcaption>Taste the diverse local cuisine!</figcaption>
+            </figure>
+        </section>
+        
+    </main>
+
+    <footer>
+        <p>&copy; <span id="year"></span> San Diego Chamber of Commerce | All Rights Reserved</p>
+        <p>Contact Us: (619) 555-0347 | Email: sandiegochamber@gmail.com</p>
+        <p>WDD 230 Chamber of Commerce Home Page by Sam Bingham</p>
+        <p id="lastModified"></p>
+    </footer>
+
+    <script src="scripts/index.js"></script>
+    <script src="scripts/windchill.js"></script>
+</body>
+</html>
