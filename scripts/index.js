@@ -14,3 +14,18 @@ hamButton.addEventListener('click', () => {
     navigation.classList.toggle('show'); // Toggle the menu visibility
     hamButton.classList.toggle('open'); // Toggle the open class
 });
+
+// visits display
+const visitsDisplay = document.querySelector('.visits');
+
+let numVisits = Number(window.localStorage.getItem('numVisits-ls')) || 0;
+
+if (numVisits !== 0) {
+    visitsDisplay.textContent = numVisits;
+} else {
+    visitsDisplay.textContent = "I don't think we've met. Welcome!";
+}
+
+numVisits++;
+
+localStorage.setItem("numVisits-ls", numVisits);
