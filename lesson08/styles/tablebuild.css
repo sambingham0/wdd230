@@ -1,0 +1,38 @@
+table {
+	margin: 10px auto;
+	border: thin solid black;
+	border-collapse: collapse;
+}
+
+caption {
+  padding: 10px;
+  caption-side: bottom;
+	color: black;
+	font-size: 1rem;
+}
+
+tr:first-child th, .highlight {
+	background-color: black;
+    color: white
+}
+
+tr:nth-child(2) th:first-child {
+    background-color: black;
+}
+
+th, td {
+	padding: 5px 10px;
+	border: 1px solid black;
+}
+
+th {
+	background-color: blue;
+}
+
+td {
+	text-align: center;
+}
+
+tbody tr:nth-child(odd) {
+	background-color: lightblue;
+}
