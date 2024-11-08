@@ -292,8 +292,8 @@ footer {
 }
 
 #sidebar {
-    grid-row: 1;
-    grid-column: 1;
+    grid-row: 1 / 1;
+    grid-column: 1 / 1;
 }
 
 #sidebar img, #discover-content img {
@@ -307,8 +307,8 @@ footer {
 }
 
 #discover-content {
-    grid-row: 2;
-    grid-column: 1;
+    grid-row: 2 / 1;
+    grid-column: 1 / 1;
 }
 
 /* join page style */
@@ -341,10 +341,6 @@ fieldset {
 
 .membershipflags strong {
     margin-right: .5rem;
-}
-
-.membershipSelect span {
-    
 }
 
 
