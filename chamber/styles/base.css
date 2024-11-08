@@ -343,6 +343,11 @@ fieldset {
     margin-right: .5rem;
 }
 
+.membershipSelect span {
+    
+}
+
+
 input[type="text"],
 input[type="password"],
 input[type="email"],
