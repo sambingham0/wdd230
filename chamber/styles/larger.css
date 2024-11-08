@@ -1,7 +1,7 @@
 @media (min-width: 1000px) {
     /* Navigation Styles */
     #nav-menu {
-        display: block; /* Use flex for the navigation menu */
+        display: flex; /* Use flex for the navigation menu */
         justify-content: center; /* Center the items */
         gap: 20px; /* Space between items */
     }
@@ -15,6 +15,7 @@
     .hamburger {
         display: none; /* Hide the hamburger on larger screens */
     }
+
 
     /* Main Layout Styles */
     main {
@@ -143,12 +144,45 @@
     }
 
     #welcome-message {
-        color:;
-        font-size: 1em; /* Adjust the font size as needed */
-        margin: 10px 0; /* Add some margin for spacing */
-        padding: 0; /* No padding */
-        text-align: center; /* Center the text if desired */
+        color: black;
+        font-size: 1em;
+        margin: 10px 0;
+        padding: 0;
+        text-align: center;
+    }
+
+    /* large form styles */
+    #membership-layout {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 20px;
+        padding: 0 2%;
     }
     
+    #membership-benefits {
+        display: block !important;
+        background-color: var(--secondary-bg-color);
+        padding: 20px;
+        border-radius: 15px;
+        max-height: 78%;
+    }    
+    
+    .membership-option {
+        margin-bottom: 20px;
+        border: solid 2px black;
+        border-radius: 10px;
+    }
+    
+    .membership-option h3, .membership-option p {
+        color: var(--primary-bg-color);
+        margin-left: 1rem;
+    }
+    
+    .membership-option ul {
+        padding-left: 20px;
+    }
+    
+    .membership-option li {
+        margin-bottom: 5px;
+    }
 }
-

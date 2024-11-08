@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>San Diego Chamber of Commerce Site Plan</title>
+    <meta name="description" content="WDD 230 - Web Frontend Development, Sam Bingham, chamber site">
+    <meta name="author" content="Sam Bingham">
+    <meta property="og:title" content="WDD230"/>
+    <meta property="og:type" content="website"/>
+    <meta property="og:url" content="https://sambingham0.github.io/wdd230/" />
+    <meta property="og:image" content="https://stock.adobe.com/images/beautiful-sunrise-lookin-over-the-helena-valley-and-the-catherdral/300432549" />
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/base.css">
+    <link rel="stylesheet" href="styles/medium.css">
+    <link rel="stylesheet" href="styles/larger.css">
+    <link rel="icon" href="favicon.ico">
+</head>
+<body>
+    <header>
+        <h1>Welcome to the San Diego Chamber of Commerce</h1>
+        <nav>
+            <button id="menu-toggle" class="hamburger">&#9776;</button> <!-- Hamburger icon -->
+            <ul id="nav-menu">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="discover.html">Discover</a></li>
+                <li><a href="directory.html">Directory</a></li>
+                <li><a href="join.html">Join</a></li>
+            </ul>
+        </nav>
+        <label for="darkModeToggle" class="dark-mode-label">Dark Mode</label>
+        <label class="switch">
+            <input type="checkbox" id="darkModeToggle">
+            <span class="slider"></span>
+        </label>
+    </header>    
+
+    <main>
+        <h1>Membership Application</h1>
+        <div id="membership-layout">
+            <form method="get" action="thankyou.html">
+                <fieldset>
+                    <legend>Application</legend>
+                
+                    <label>First Name*
+                        <input type="text" id="fname" name="fname" required>
+                    </label>
+                    <br><br>
+
+                    <label>Last Name*
+                        <input type="text" id="lname" name="lname" required>
+                    </label>
+                    <br><br>
+
+                    <label>Title or Position*
+                        <input type="text" id="title" name="title" 
+                        pattern="^[A-Za-z\s\-]{7,}$" required>
+                    </label>
+                    <br><br>
+
+                    <label>Email*
+                        <input type="email" id="email" name="email" 
+                            placeholder="someone@gmail.com"
+                            title="A valid email address."
+                            pattern="[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]" required>
+                    </label>
+                    <br><br>
+
+                    <label>Phone 
+                        <input type="tel" id="phone" name="phone" 
+                            placeholder="1235551234" required>
+                    </label>
+                    <br><br>
+
+                    <label>Business/Organization*
+                        <input type="text" id="organ" name="organ" required>
+                    </label>
+                    <br><br>
+
+                    <label>Business Description: 
+                        <textarea id="description" name="description" rows="4" cols="50" placeholder="Enter your text here..."></textarea>
+                    </label>
+                    <br><br>
+
+                    <div class="membershipSelect">
+                        <h2>Memberships</h1>
+                        <div class="membershipflags">
+                            <label><input type="radio" name="membership" value="Non-profit"> <strong>NP Membership</strong>
+                            <p>Non-profit organization</p>
+                            <p>Fee: $0/month</p>
+                            </label>
+                        </div>
+                        <div class="membershipflags">
+                            <label><input type="radio" name="membership" value="Bronze"> <strong>Bronze Membership</strong>
+                            <p>Small Organization</p>
+                            <p>Fee: $10/month</p>
+                            </label>
+                        </div>
+                        <div class="membershipflags">
+                            <label><input type="radio" name="membership" value="Silver"><strong> Silver Membership</strong>
+                            <p>Medium Organization</p>
+                            <p>Fee: $20/month</p>
+                            </label>
+                        </div>
+                        <div class="membershipflags">
+                            <label><input type="radio" name="membership" value="Gold"> <strong>Gold Membership</strong>
+                            <p>Large Organization</p>
+                            <p>Fee: $30/month</p>
+                            </label>
+                        </div>
+                    </div>
+                    <input type="hidden" id="loadTime" name="loadTime">
+                </fieldset>
+                <input type="submit" value="Apply Now">
+            </form>  
+
+            <div id="membership-benefits">
+                <h2>Membership Levels & Benefits</h2>
+                <div class="membership-option">
+                    <h3>Non-profit Membership</h3>
+                    <p>Fee: $0/month</p>
+                    <ul>
+                        <li>Access to all events</li>
+                        <li>Basic advertising</li>
+                    </ul>
+                </div>
+                <div class="membership-option">
+                    <h3>Bronze Membership</h3>
+                    <p>Fee: $10/month</p>
+                    <ul>
+                        <li>Access to all events</li>
+                        <li>Basic advertising</li>
+                        <li>Event discounts</li>
+                    </ul>
+                </div>
+                <div class="membership-option">
+                    <h3>Silver Membership</h3>
+                    <p>Fee: $20/month</p>
+                    <ul>
+                        <li>Access to all events</li>
+                        <li>Advanced advertising (Spotlight position)</li>
+                        <li>Event discounts</li>
+                        <li>Training opportunities</li>
+                    </ul>
+                </div>
+                <div class="membership-option">
+                    <h3>Gold Membership</h3>
+                    <p>Fee: $30/month</p>
+                    <ul>
+                        <li>Access to all events</li>
+                        <li>Premium advertising (Homepage feature)</li>
+                        <li>Event discounts</li>
+                        <li>Exclusive training sessions</li>
+                        <li>VIP event access</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; <span id="year"></span> San Diego Chamber of Commerce | All Rights Reserved</p>
+        <p>Contact Us: (619) 555-0347 | Email: sandiegochamber@gmail.com</p>
+        <p>WDD 230 Chamber of Commerce Home Page by Sam Bingham</p>
+        <p id="lastModified"></p>
+    </footer>
+
+    <script src="scripts/index.js"></script>
+</body>
+</html>

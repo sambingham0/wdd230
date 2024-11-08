@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>San Diego Chamber of Commerce Site Plan</title>
+    <meta name="description" content="WDD 230 - Web Frontend Development, Sam Bingham, chamber site">
+    <meta name="author" content="Sam Bingham">
+    <meta property="og:title" content="WDD230"/>
+    <meta property="og:type" content="website"/>
+    <meta property="og:url" content="https://sambingham0.github.io/wdd230/" />
+    <meta property="og:image" content="https://stock.adobe.com/images/beautiful-sunrise-lookin-over-the-helena-valley-and-the-catherdral/300432549" />
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/base.css">
+    <link rel="stylesheet" href="styles/medium.css">
+    <link rel="stylesheet" href="styles/larger.css">
+    <link rel="icon" href="favicon.ico">
+</head>
+<body>
+    <header>
+        <h1>Welcome to the San Diego Chamber of Commerce</h1>
+        <nav>
+            <button id="menu-toggle" class="hamburger">&#9776;</button> <!-- Hamburger icon -->
+            <ul id="nav-menu">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="discover.html">Discover</a></li>
+                <li><a href="directory.html">Directory</a></li>
+                <li><a href="join.html">Join</a></li>
+            </ul>
+        </nav>
+        <label for="darkModeToggle" class="dark-mode-label">Dark Mode</label>
+        <label class="switch">
+            <input type="checkbox" id="darkModeToggle">
+            <span class="slider"></span>
+        </label>
+    </header> 
+    <main>
+        <h1>Thank you for your submission!</h1>
+        <p>Your application has been successfully submitted.</p>
+    </main>
+    <footer>
+        <p>&copy; <span id="year"></span> San Diego Chamber of Commerce | All Rights Reserved</p>
+        <p>Contact Us: (619) 555-0347 | Email: sandiegochamber@gmail.com</p>
+        <p>WDD 230 Chamber of Commerce Home Page by Sam Bingham</p>
+        <p id="lastModified"></p>
+    </footer>
+
+    <script src="scripts/index.js"></script>
+</body>
+</html>
