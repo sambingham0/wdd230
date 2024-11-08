@@ -29,3 +29,23 @@ if (numVisits !== 0) {
 numVisits++;
 
 localStorage.setItem("numVisits-ls", numVisits);
+
+// FORM SCRIPTS
+function checkPasswords() {
+    const password = document.getElementById('password');
+    const repass = document.getElementById('repass');
+
+    // Check if the passwords match
+    if (password.value !== repass.value) {
+        alert("Passwords do not match. Please try again.");
+        password.value = "";  // Clear both fields
+        repass.value = "";
+        password.focus();  // Focus on the first password field
+        return false;  // Prevent form submission
+    }
+    return true;  // Allow form submission if passwords match
+}
+
+function updateRating(value) {
+    document.getElementById('ratingValue').textContent = value;
+}

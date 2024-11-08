@@ -1,0 +1,184 @@
+:root {
+    --primary-bg-color: #fffdd0; /* Background color for the body */
+    --primary-font: 'Arial', sans-serif; /* Font for the body and text */
+    --primary-color: #00008b; /* Color for the navigation background */
+    --accent-color: #555; /* Color for hover state in links */
+    --button-bg-color: red; /* Background color for submit buttons */
+    --button-text-color: #fff; /* Text color for submit buttons */
+    --border-color: #999; /* Border color for inputs and other elements */
+    --highlight-color: blue; /* Color for rating and legend */
+    --hover-bg-color: #555; /* Background color for hover state */
+    --input-bg-color: #eee; /* Background color for inputs */
+    --input-border-radius: 6px; /* Border radius for form inputs */
+    --shadow-color: #999; /* Box shadow color for submit button */
+}
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 5px;
+    gap: 20px; /* Adds space between the image and the text */
+}
+
+header h1 {
+    margin: 0;
+}
+
+img {
+    max-width: 20%;
+    height: auto;
+}
+
+nav {
+    position: relative; /* Ensure the nav can position the button */
+}
+
+nav ul {
+    list-style-type: none;
+    background-color: var(--primary-color);
+    padding: 1px 0;
+    display: flex; /* Use flexbox to align the items horizontally */
+    justify-content: center; /* Centers the items horizontally */
+    align-items: center; /* Vertically center the items */
+    text-align: center;
+    display: none;
+}
+
+nav ul.show {
+    display: flex; /* Show menu when toggled */
+    flex-direction: column; /* Stack items vertically */
+}
+
+nav li {
+    display: block;
+    margin: 10px 10px;
+    max-width: 80%;
+}
+
+nav a {
+    position: relative; /* Establish a positioning context */
+    color: var(--button-text-color);
+    display: block;
+    text-decoration: none;
+    padding-bottom: 5px; /* Add padding to accommodate the line */
+}
+
+nav a::after {
+    content: ""; /* Create an empty pseudo-element */
+    position: absolute; /* Position it relative to the link */
+    left: 0;
+    bottom: 0; /* Align to the bottom */
+    height: 2px; /* Height of the line */
+    width: 100%; /* Full width of the link */
+    background-color: #fff; /* Color of the line */
+    transform: scaleX(0); /* Initially scale down the line */
+    transition: transform 0.3s ease; /* Smooth transition */
+}
+
+nav a:hover {
+    background-color: var(--hover-bg-color);
+    text-decoration: underline;
+}
+
+nav a:hover::after {
+    transform: scaleX(1); /* Scale the line to full width on hover */
+}
+
+#menu {
+    display: block;
+    font-size: 1.5rem;
+    border: 0;
+    background: none;
+    color: #000;
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+    cursor: pointer; /* Change cursor to pointer */
+    display: block; /* Show hamburger button in mobile view */
+}
+
+#menu::before {
+    content: "☰"; /* Hamburger icon */
+}
+
+#menu.open::before {
+    content: "❌"; /* Close icon */
+}
+
+body {
+    font-family: var(--primary-font);
+    margin: 0;
+    padding: 0;
+    background-color: var(--primary-bg-color);
+}
+
+h1 {
+    display: block;
+    padding: .75rem;
+}
+
+legend {
+    text-align: center;
+    font-size: .7rem;
+    color: var(--highlight-color);
+}
+
+input[type="text"],
+input[type="password"],
+input[type="email"] {
+    background-color: var(--input-bg-color);
+    display: block;
+    border: solid 1px var(--border-color);
+    border-radius: var(--input-border-radius);
+    padding: .75rem;
+    color: #555;
+    width: 100%;
+    max-width: 400px;
+    appearance: none;
+    margin-top: .3rem;
+}
+
+input[type="range"] {
+    background-color: var(--input-bg-color);
+    display: block;
+    border: solid 1px var(--border-color);
+    width: 100%;
+    max-width: 400px;
+    appearance: none;
+    margin-top: .3rem;
+    border-radius: 10px;
+}
+
+#ratingValue {
+    color: var(--highlight-color);
+}
+
+input:required {
+    border-left: solid 8px red;
+}
+
+input:required:valid {
+    border-left: solid 8px green;
+}
+
+input[type="submit"] {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: none;
+    background-color: var(--button-bg-color);
+    color: var(--button-text-color);
+    border-radius: var(--input-border-radius);
+    padding: .8rem;
+    width: 96%;
+    max-width: 400px;
+    margin: auto;
+    margin-top: -1rem;
+    box-shadow: 1px 1px 4px var(--shadow-color);
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+}
