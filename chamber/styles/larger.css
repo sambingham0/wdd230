@@ -110,7 +110,7 @@
         grid-column: 1;
         grid-row: 1;
         display: grid;
-        grid-template-rows: 1;
+        grid-template-rows: 1fr;
     }
 
     #sidebar img, #discover-content img {
