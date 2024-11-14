@@ -1,0 +1,25 @@
+{
+    "wardInformation": {
+        "familyName": "Barnes",
+        "moveInDate": "2018-05-05",
+        "numberOfPeople": 3,
+        "visitedByBishopric": false,
+        "familyMembers": [
+            {
+              "name": "Lois Barnes",
+              "gender": "Female",
+              "birthdate": "1985-05-20"
+            },
+            {
+              "name": "Mark Barnes",
+              "gender": "Male",
+              "birthdate": "1988-11-12"
+            },
+            {
+              "name": "Alex Barnes",
+              "gender": "Male",
+              "birthdate": "2010-02-03"
+            }
+        ]
+    }
+}
