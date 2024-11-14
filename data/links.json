@@ -1,0 +1,113 @@
+{
+    "lessons": [
+        {
+            "lesson": "02",
+            "links": [
+                {                
+                    "url": "lesson02/design.html",
+                    "title":"Lesson 02 Activity"
+                },
+                {                
+                    "url": "lesson02/design-principles",
+                    "title":"Design Principles"
+                },
+                {                
+                    "url": "lesson02/media-query.html",
+                    "title": "Media Queries"
+                }
+            ]
+        },
+        {
+            "lesson": "03",
+            "links": [
+                {                
+                    "url": "lesson03/design.html",
+                    "title":"Lesson 03 Activity"
+                }
+            ]
+        },
+        {
+            "lesson": "04",
+            "links": [
+                {                
+                    "url": "lesson04/design.html",
+                    "title":"Lesson 04 Activity"
+                }
+            ]
+        },
+        {
+            "lesson": "05",
+            "links": [
+                {                
+                    "url": "lesson05/bom.html",
+                    "title":"Lesson 05 Activity"
+                },
+                {                
+                    "url": "lesson05-Upgrade/bom.html",
+                    "title":"Local Storage Activity"
+                }
+            ]
+        },
+        {
+            "lesson": "06",
+            "links": [
+                {                
+                    "url": "lesson06/responsive-images.html",
+                    "title":"Lesson 06 Activity"
+                },
+                {                
+                    "url": "lesson06/images/landscape.webp",
+                    "title":"WebP Activity"
+                }
+            ]
+        },
+        {
+            "lesson": "07",
+            "links": [
+                {                
+                    "url": "lesson07/lazyload.html",
+                    "title":"Lesson 07 Activity"
+                }
+            ]
+        },
+        {
+            "lesson": "08",
+            "links": [
+                {                
+                    "url": "lesson08/tablebuild.html",
+                    "title":"Lesson 08 Activity"
+                },
+                {                
+                    "url": "Form-start/index.html",
+                    "title":"Form Building Activity"
+                }
+            ]
+        },
+        {
+            "lesson": "09",
+            "links": [
+                {                
+                    "url": "lesson09/new-ward-members.json",
+                    "title":"Lesson 09 Activity"
+                },
+                {                
+                    "url": "lesson09/prophets.html",
+                    "title":"Fetch Activity"
+                }
+            ]
+        },
+        {
+            "lesson": "10",
+            "links": [
+                {                
+                    "url": "",
+                    "title":"Lesson 10 Activity"
+                },
+                {                
+                    "url": "",
+                    "title":" Activity"
+                }
+            ]
+        }
+    ]
+}
