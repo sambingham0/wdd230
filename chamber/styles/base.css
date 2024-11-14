@@ -407,3 +407,45 @@ input[type="submit"] {
     margin-top: 1rem;
     box-shadow: 1px 1px 4px #999;
 }
+
+/* discover page */
+/* For Grid View */
+.members-list.grid-view {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 20px;
+}
+
+/* For List View */
+.members-list.list-view {
+    display: block;
+    max-width: 100%;
+    width: 100%;
+    max-height: auto;
+}
+
+.member-card {
+    background-color: var(--secondary-bg-color);
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
+    max-width: 100%;
+}
+
+.member-card img {
+    display: inline;
+    max-width: 100px;
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+.member-card h3 {
+    margin-top: 10px;
+    font-size: 1.2em;
+}
+
+main button {
+    display: inline;
+}

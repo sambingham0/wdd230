@@ -185,4 +185,18 @@
     .membership-option li {
         margin-bottom: 5px;
     }
+
+    /* directory styles */
+    #view-buttons {
+        display: flex;
+        gap: 15px;
+    }
+
+    .view-btn {
+        padding: 10px 20px;
+        background-color: var(--primary-bg-color);
+        color: var(--light-text-color);
+        border-radius: 5px;
+        font-size: 1em;
+    }
 }

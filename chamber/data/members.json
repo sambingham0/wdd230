@@ -1,0 +1,68 @@
+{
+    "members": [
+      {
+        "name": "Sunny Coffee Roasters",
+        "address": "123 Coffee St, San Diego, CA 92101",
+        "phone": "(619) 555-0123",
+        "website": "https://sunnycoffeeroasters.com",
+        "image": "sunnycoffee.webp",
+        "membershipLevel": "Gold",
+        "additionalInfo": "Specializing in sustainable, organic coffee blends."
+      },
+      {
+        "name": "Green Thumb Landscaping",
+        "address": "456 Green Way, San Diego, CA 92102",
+        "phone": "(619) 555-0345",
+        "website": "https://greenthumblandscaping.com",
+        "image": "greenthumb.webp",
+        "membershipLevel": "Silver",
+        "additionalInfo": "Eco-friendly landscaping solutions for homes and businesses."
+      },
+      {
+        "name": "Seaside Adventure Tours",
+        "address": "789 Coastal Rd, San Diego, CA 92103",
+        "phone": "(619) 555-0567",
+        "website": "https://seasideadventuretours.com",
+        "image": "seaside.webp",
+        "membershipLevel": "Non-Profit",
+        "additionalInfo": "Offering kayaking, snorkeling, and eco-tours along the coastline."
+      },
+      {
+        "name": "Ocean Breeze Yoga",
+        "address": "101 Yoga Blvd, San Diego, CA 92104",
+        "phone": "(619) 555-0789",
+        "website": "https://oceanbreezeyoga.com",
+        "image": "yoga.webp",
+        "membershipLevel": "Gold",
+        "additionalInfo": "A serene yoga studio by the ocean for mind-body wellness."
+      },
+      {
+        "name": "Blue Sky Digital Marketing",
+        "address": "202 Marketing St, San Diego, CA 92105",
+        "phone": "(619) 555-0910",
+        "website": "https://blueskydigital.com",
+        "image": "bluesky.webp",
+        "membershipLevel": "Bronze",
+        "additionalInfo": "Digital marketing agency specializing in social media strategies."
+      },
+      {
+        "name": "Mountain High Outdoor Gear",
+        "address": "303 Adventure Ave, San Diego, CA 92106",
+        "phone": "(619) 555-1122",
+        "website": "https://mountainhighgear.com",
+        "image": "mountainhigh.webp",
+        "membershipLevel": "Silver",
+        "additionalInfo": "Outdoor gear store for hiking, camping, and adventure sports."
+      },
+      {
+        "name": "Tasty Treats Bakery",
+        "address": "404 Sweet St, San Diego, CA 92107",
+        "phone": "(619) 555-1345",
+        "website": "https://tastytreats.com",
+        "image": "treats.webp",
+        "membershipLevel": "Bronze",
+        "additionalInfo": "A bakery offering freshly baked cakes, pastries, and cookies."
+      }
+    ]
+  }
+  
