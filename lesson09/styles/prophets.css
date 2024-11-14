@@ -1,0 +1,23 @@
+section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: lightgrey;
+    border-radius: 10px;
+    margin: auto;
+    padding: 7px;
+    margin-top: 15px;
+}
+
+h2, p, h1{
+    text-align: center;
+}
+
+h2, h1 {
+    color: navy;
+}
+
+#cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+}
