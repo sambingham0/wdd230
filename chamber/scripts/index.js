@@ -46,7 +46,7 @@ document.addEventListener('DOMContentLoaded', function () {
     const banner = document.getElementById('event-banner');
     if (banner) { // Check if the element exists
         const currentDay = new Date().getDay();
-        if (currentDay === 1 || currentDay === 2 || currentDay === 5) {
+        if (currentDay === 1 || currentDay === 2 || currentDay === 3) {
             banner.style.display = 'block';
         }
 
