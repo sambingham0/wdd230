@@ -101,11 +101,7 @@
             "links": [
                 {                
                     "url": "lesson10/weather.html",
-                    "title":"API: Weather Information"
-                },
-                {                
-                    "url": "",
-                    "title":" Activity"
+                    "title":"Lesson 10 Activity"
                 }
             ]
         }
