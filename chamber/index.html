@@ -36,6 +36,12 @@
     </header>    
 
     <main>
+        <div id="event-banner" class="banner">
+            <div class="banner-content">
+                <p>Join us for the Chamber of Commerce Meet and Greet on Wednesday at 7:00 p.m.!</p>
+                <button id="close-banner" class="close-btn">❌</button>
+            </div>
+        </div>        
         <section class="hero">
             <h2>Supporting Business Growth</h2>
             <p>Join us in promoting the interests of local businesses.</p>
@@ -93,18 +99,18 @@
         <section id="weather-card" class="card">
             <h2>Weather Forecast</h2>
             <div class="weather-info">
-                <div class="weather-icon">
-                    <img src="images/weather.webp" alt="Sunny" />
-                </div>
+                <h3>Today's Weather</h3>
+                <figure>
+                    <figcaption id="figcaption"></figcaption>
+                    <img class="weather-icon" id="weather-icon" src="images/weather.webp" alt="weather">
+                </figure>
                 <div class="weather-details">
-                    <p class="temperature">47°F</p>
-                    <p class="windspeed">8mph</p>
-                    <p class="windchill">0°F</p>
-                    <p class="condition">Sunny</p>
+                    <p class="temperature"><span id="current-temp"></span></p>
                     <p class="location">San Diego, CA</p>
-                </div>
+                </div>              
             </div>
-        </section>                              
+            <div class="forecast"></div>  
+        </section>                            
 
         <section id="visitor-questions" class="card">
             <h2>Common Visitor Questions</h2>
@@ -160,6 +166,7 @@
     </footer>
 
     <script src="scripts/index.js"></script>
-    <script src="scripts/windchill.js"></script>
+    <!-- <script src="scripts/windchill.js"></script> -->
+    <script src="scripts/weather.js"></script>
 </body>
 </html>

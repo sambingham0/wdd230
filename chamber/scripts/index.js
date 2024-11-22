@@ -42,6 +42,22 @@ darkModeToggle.addEventListener('change', () => {
     document.querySelector('footer').classList.toggle('dark-mode');
 });
 
+document.addEventListener('DOMContentLoaded', function () {
+    // Get the current day of the week (0 is Sunday, 6 is Saturday)
+    const currentDay = new Date().getDay();
+    
+    // Show the banner only on Monday (1), Tuesday (2), or Wednesday (3)
+    if (currentDay === 1 || currentDay === 2 || currentDay === 5) {
+        document.getElementById('event-banner').style.display = 'block';
+    }
+
+    // Close the banner when the close button is clicked
+    document.getElementById('close-banner').addEventListener('click', function () {
+        document.getElementById('event-banner').style.display = 'none';
+    });
+});
+
+
 // Function to display the message based on visit time
 function displayVisitMessage() {
     const lastVisit = localStorage.getItem('lastVisit');
