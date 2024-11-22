@@ -100,8 +100,8 @@
             "lesson": "10",
             "links": [
                 {                
-                    "url": "",
-                    "title":"Lesson 10 Activity"
+                    "url": "lesson10/weather.html",
+                    "title":"API: Weather Information"
                 },
                 {                
                     "url": "",
