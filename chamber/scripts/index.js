@@ -85,9 +85,6 @@ function displayVisitMessage() {
     }
 }
 
-// Call the function to execute on page load
-displayVisitMessage();
-
 //form scripts
 window.onload = function() {
     // Get the hidden input element
