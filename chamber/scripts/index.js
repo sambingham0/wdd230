@@ -84,12 +84,3 @@ function displayVisitMessage() {
         }
     }
 }
-
-//form scripts
-window.onload = function() {
-    // Get the hidden input element
-    var hiddenInput = document.getElementById('loadTime');
-    
-    // Set the value of the hidden input to the current date/time in milliseconds
-    hiddenInput.value = Date.now();
-};
