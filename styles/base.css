@@ -153,3 +153,8 @@ footer {
     height: 450px; /* Height of the map */
     border: 0; /* Remove the border of the iframe */
 }
+
+/* styles for weather */
+figcaption {
+    text-transform: capitalize;
+}
