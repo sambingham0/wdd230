@@ -31,15 +31,9 @@ const darkModeToggle = document.getElementById('darkModeToggle');
 
 darkModeToggle.addEventListener('change', () => {
     document.body.classList.toggle('dark-mode');
-    document.querySelector('.hero').classList.toggle('dark-mode');
-    document.querySelectorAll('.card').forEach(card => {
-        card.classList.toggle('dark-mode');
-    });   
-    document.querySelector('#company-spotlights').classList.toggle('dark-mode');
-    document.querySelectorAll('.spotlight').forEach(spotlight => {
-        spotlight.classList.toggle('dark-mode');
-    });
-    document.querySelector('footer').classList.toggle('dark-mode');
+    
+    const weatherInfo = document.getElementById('weather-info');
+    weatherInfo.classList.toggle('dark-mode');
 });
 
 document.addEventListener('DOMContentLoaded', function () {
@@ -86,3 +80,9 @@ function displayVisitMessage() {
         }
     }
 }
+
+document.addEventListener('DOMContentLoaded', function () {
+    if (document.getElementById('welcome-message')) {
+        displayVisitMessage();
+    }
+});
