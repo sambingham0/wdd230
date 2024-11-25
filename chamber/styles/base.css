@@ -325,7 +325,6 @@ footer {
 
 #sidebar img, #discover-content img {
     width: 100%;
-    max-height: auto;
 }
 
 #discover-content figure {
