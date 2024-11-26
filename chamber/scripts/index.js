@@ -31,9 +31,6 @@ const darkModeToggle = document.getElementById('darkModeToggle');
 
 darkModeToggle.addEventListener('change', () => {
     document.body.classList.toggle('dark-mode');
-    
-    const weatherInfo = document.getElementById('weather-info');
-    weatherInfo.classList.toggle('dark-mode');
 });
 
 document.addEventListener('DOMContentLoaded', function () {

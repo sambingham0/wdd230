@@ -75,10 +75,6 @@
         grid-row: 1/2;
     }
 
-    #current-events h2 {
-        color: #FFFFFF;
-    }
-
     #visitor-questions {
         order: 4;
         grid-row: 2/3;
@@ -95,7 +91,6 @@
         order: 5; /* Weather section second */
         grid-row: 2/3;
         grid-column: 3/4;
-        max-width: 100%;
     }
 
     #company-spotlights {
@@ -104,17 +99,11 @@
         grid-column: 1/4;
     }
 
-    #company-spotlights img {
-        max-width: 10%;
-    }
-
     /* discover page styles */
 
     #discover-main {
         display: grid;
         grid-template-columns: 1fr 2fr;
-        grid-template-rows: auto;
-        align-items: start;
     }
 
     #sidebar {
@@ -128,10 +117,6 @@
         width: 100%;
     }
 
-    #sidebar li {
-        padding: .4rem;
-    }
-
     #discover-content {
         grid-column: 2;
         grid-row: 1;
@@ -140,6 +125,11 @@
         margin-top: 0; /* No margin at the top */
         padding-top: 0; /* No padding at the top */
     }    
+
+    #discover-content figure {
+        margin: 0; /* Remove margin from figure */
+        padding: 0; /* Remove padding from figure */
+    }
     
     #discover-content img {
         display: block; /* Ensures there are no extra spaces */
@@ -155,11 +145,13 @@
 
     #welcome-message {
         color: black;
+        font-size: 1em;
         margin: 10px 0;
         padding: 0;
         text-align: center;
     }
 
+    /* large form styles */
     #membership-layout {
         display: grid;
         grid-template-columns: 1fr 1fr;
