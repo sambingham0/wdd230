@@ -23,6 +23,7 @@ const tempHigh = document.querySelector('#high-temp');
 
 const tableBody = document.querySelector("#rental-pricing");
 
+
 async function apiFetch() {
   try {
       const response = await fetch(url);
@@ -34,9 +35,7 @@ async function apiFetch() {
           throw Error(await response.text());
       }
   } catch (error) {
-    if (error) {
       console.log(error);
-    }
   }
 }
 async function forecastAPIFetch() {
@@ -50,9 +49,7 @@ async function forecastAPIFetch() {
           throw Error(await response.text());
       }
   } catch (error) {
-      if (error) {
-        console.log(error);
-      }
+      console.log(error);
   }
 }
 
@@ -92,10 +89,6 @@ function displayForecast(forecastList) {
   forecast.innerHTML = `${temp}&deg;F`;
 }
 
-
-apiFetch();
-forecastAPIFetch();
-
 // rentals scripts
 async function getRentals() {
   const response = await fetch('data/rental.json');
@@ -122,6 +115,12 @@ function loadRentalData(rentalData) {
   });
 }
 
-if (tableBody) {
-  window.onload = getRentals;
-}
+
+
+document.addEventListener('DOMContentLoaded', () => {
+  apiFetch();
+  forecastAPIFetch();
+  if (tableBody) {
+    getRentals();
+  }
+});
