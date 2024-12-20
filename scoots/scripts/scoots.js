@@ -91,8 +91,7 @@ function displayForecast(forecastList) {
   const tomorrowStr = tomorrow.toISOString().split('T')[0]; // Format as 'YYYY-MM-DD'
 
   // Find the forecast for tomorrow at 3 PM
-  const tomorrowForecast = forecastList.filter(item =>
-    item.dt_txt.includes(tomorrowStr) && item.dt_txt.includes("12:00:00")).slice(0, 1);
+  const tomorrowForecast = forecastList.filter(item => item.dt_txt.includes("15:00:00")).slice(0, 1);
 
   const temp = Math.round(tomorrowForecast.main.temp);
   forecast.innerHTML = `${temp}&deg;F`;
