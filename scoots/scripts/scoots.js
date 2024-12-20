@@ -118,4 +118,6 @@ function loadRentalData(rentalData) {
   });
 }
 
-window.onload = getRentals;
+if (tableBody) {
+  window.onload = getRentals;
+}
