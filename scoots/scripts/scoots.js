@@ -34,7 +34,9 @@ async function apiFetch() {
           throw Error(await response.text());
       }
   } catch (error) {
+    if (error) {
       console.log(error);
+    }
   }
 }
 async function forecastAPIFetch() {
@@ -48,7 +50,9 @@ async function forecastAPIFetch() {
           throw Error(await response.text());
       }
   } catch (error) {
-      console.log(error);
+      if (error) {
+        console.log(error);
+      }
   }
 }
 
