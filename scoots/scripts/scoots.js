@@ -55,21 +55,31 @@ async function forecastAPIFetch() {
 
 function displayResults(data) {
   const temp = Math.round(data.main.temp);
-  currentTemp.innerHTML = `${temp}&deg;F`;
+  if(currentTemp) {
+    currentTemp.innerHTML = `${temp}&deg;F`;
+  }
   const iconsrc = `https://openweathermap.org/img/w/${data.weather[0].icon}.png`;
   let title = data.weather[0].main;
   let desc = data.weather[0].description;
-  weatherTitle.innerHTML = title;
+  if(weatherTitle) {
+    weatherTitle.innerHTML = title;
+  }
 
   weatherIcon.setAttribute('src', iconsrc);
   weatherIcon.setAttribute('alt', desc);
-  captionDesc.textContent = `${desc}`;
+  if(captionDesc) {
+    captionDesc.textContent = `${desc}`;
+  }
 
   const humid = data.main.humidity;
-  currentHumid.innerHTML = `${humid}%`;
+  if(currentHumid) {
+    currentHumid.innerHTML = `${humid}%`;
+  }
 
   const high = data.main.temp_max;
-  tempHigh.innerHTML = `Today's high temperature: ${high}&deg;F`;
+  if(tempHigh) {
+    tempHigh.innerHTML = `Today's high temperature: ${high}&deg;F`;
+  }
 }
 
 function displayForecast(forecastList) {
