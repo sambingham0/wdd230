@@ -1,0 +1,348 @@
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  background-color: #f4f4f4;
+  color: #333;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+/* Closeable message styles */
+.closeable-message {
+  background-color: #ffcc00;
+  padding: 10px;
+  color: #333;
+  display: flex;
+  justify-content: space-between;
+  border: 1px solid #e6b800;
+  border-radius: 1rem;
+  margin: 10px 0;
+}
+
+#close-message {
+  background: none;
+  border: none;
+  font-size: 16px;
+  color: #333;
+  cursor: pointer;
+}
+
+#close-message:hover {
+  color: #ff0000;
+}
+
+/* Header Section */
+header {
+  background-color: #005a8e;
+  color: white;
+  padding: 20px;
+  text-align: center;
+  border-radius: .5rem;
+}
+
+header h1 {
+  margin-bottom: 10px;
+  font-size: 2.5rem;
+}
+
+header p {
+  margin-bottom: 20px;
+  font-size: 1.2rem;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+nav ul li {
+    display: inline-block;
+    margin-right: 15px;
+    padding: 3px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+nav ul li a:hover {
+    color: crimson;
+}
+
+.cta-button {
+  background-color: #ffcc00;
+  color: #333;
+  padding: 10px 20px;
+  border-radius: 5px;
+  font-weight: bold;
+}
+
+.cta-button:hover {
+  background-color: #e6b800;
+}
+
+/* Weather Section */
+#weather {
+  padding: 20px;
+  background-color: #ffffff;
+  border: 1px solid #ddd;
+  border-radius: .5rem;
+  margin: 20px 0;
+  }
+
+#weather h2 {
+  margin-bottom: 20px;
+  font-size: 1.8rem;
+}
+
+#weather-info p {
+  margin: 10px 0;
+}
+
+#weather-icon {
+  width: 100px;
+  height: 100px;
+  margin-top: 10px;
+}
+
+#weather-description {
+    text-transform: capitalize;
+}
+
+/* Rentals Section */
+#rentals-summary {
+  padding: 20px;
+  background-color: #ffffff;
+  border: 1px solid #ddd;
+  border-radius: .5rem;
+  margin: 20px 0;
+}
+
+#rentals-summary h2 {
+  margin-bottom: 20px;
+  font-size: 1.8rem;
+}
+
+.rental-type {
+  margin-bottom: 20px;
+}
+
+.rental-type h3 {
+  font-size: 1.6rem;
+  margin-bottom: 10px;
+}
+
+.rental-type ul {
+  list-style-type: none;
+  padding-left: 20px;
+}
+
+.rental-type li {
+  margin-bottom: 5px;
+}
+
+/* Footer Section */
+footer {
+  background-color: #333;
+  color: white;
+  text-align: center;
+  padding: 20px;
+  border-radius: .5rem;
+}
+
+footer .social-media-links {
+  margin-bottom: 10px;
+}
+
+footer .social-media-links a {
+  margin: 0 10px;
+  color: white;
+  font-size: 1.2rem;
+}
+
+footer .social-media-links a:hover {
+  color: #ffcc00;
+}
+
+footer p {
+  font-size: 1rem;
+  margin-top: 10px;
+}  
+
+
+/* Rentals Table Styles */
+#rental-pricing {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;
+}
+  
+#rental-pricing th, #rental-pricing td {
+  padding: 10px;
+  text-align: center;
+  border: 1px solid #ddd;
+}
+
+#rental-pricing th {
+  background-color: #005a8e;
+  color: white;
+}
+
+#rental-pricing tr:nth-child(even) {
+  background-color: #f2f2f2;
+}
+
+#rental-pricing tr:hover {
+  background-color: #ddd;
+}
+  
+
+
+/* Reservation Styles */
+#rental-agreement, #reservation-form {
+  padding: 20px;
+  background-color: #ffffff;
+  border: 1px solid #ddd;
+  border-radius: .5rem;
+  margin: 20px 0;
+}
+
+#reservation-form {
+    display: flex;
+    flex-direction: column;  /* Stack elements vertically */
+    gap: 1.5rem;  /* Space between form elements */
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+#reservation-form h2 {
+    text-align: center;
+}
+
+#reservation-form select, #reservation-form input[type="text"], #reservation-form input[type="email"], #reservation-form input[type="tel"], #reservation-form textarea, #reservation-form input[type="date"] {
+  width: 90%;
+  padding: 10px;
+  margin-bottom: 1rem;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+}
+
+textarea {
+  resize: vertical;
+}
+
+button[type="submit"] {
+  background-color: #005a8e;
+  color: white;
+  font-weight: bold;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+button[type="submit"]:hover {
+  background-color: #003d62;
+}
+
+
+/* Contact Page Styles */
+#contact-form, #contact-info {
+  padding: 20px;
+  background-color: #ffffff;
+  border: 1px solid #ddd;
+  border-radius: .5rem;
+  margin: 20px 0;
+  width: 100%;
+}
+
+#contact-form h2 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+#contact-form input[type="text"],
+#contact-form input[type="email"],
+#contact-form input[type="tel"],
+#contact-form textarea {
+  width: 90%;
+  padding: 10px;
+  margin-bottom: 1rem;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+}
+
+#contact-form button[type="submit"] {
+  background-color: #005a8e;
+  color: white;
+  font-weight: bold;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  align-self: center;
+}
+
+#contact-form button[type="submit"]:hover {
+  background-color: #003d62;
+}
+
+/* Contact Info Section Styles */
+#contact-info {
+  padding: 20px;
+  background-color: #ffffff;
+  border: 1px solid #ddd;
+  border-radius: .5rem;
+  margin: 20px 0;
+}
+
+#contact-info h2 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+#contact-info ul {
+  list-style: none;
+  padding-left: 0;
+}
+
+#contact-info ul li {
+  margin-bottom: 10px;
+  font-size: 1.1rem;
+}
+
+#contact-info a {
+  color: #005a8e;
+  text-decoration: none;
+}
+
+#contact-info a:hover {
+  text-decoration: underline;
+}
+  
+
+/* map styles */
+
+.map-container {
+    width: 60%;
+    height: 300px;
+    margin: 20px auto;
+    border: 2px solid #ccc;
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+.map-container iframe {
+    width: 100%; /* Full width of the container */
+    height: 450px; /* Height of the map */
+    border: 0; /* Remove the border of the iframe */
+}

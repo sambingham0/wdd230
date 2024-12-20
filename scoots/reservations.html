@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>~Scoots~ Motor Scooter Rentals - Reservations</title>
+  <link rel="stylesheet" href="styles/scoots.css">
+  <link rel="stylesheet" href="styles/scoots-larger.css">
+</head>
+<body>
+  <!-- Header Section -->
+  <header>
+    <nav>
+      <ul>
+        <li><a href="scoots.html">Home</a></li>
+        <li><a href="rentals.html">Rentals</a></li>
+        <li><a href="reservations.html">Reservations</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+    <h1>Reserve Your Ride at ~Scoots~</h1>
+    <p>Fill out the form below to make your reservation.</p>
+  </header>
+
+  <!-- Rental Agreement Section -->
+  <section id="rental-agreement">
+    <h2>Rental Agreement</h2>
+    <p>Please read and accept the terms of our rental agreement before proceeding with your reservation.</p>
+    <ul>
+      <li>A $50 security deposit is required to confirm reservations.</li>
+      <li>A valid driver's license is required at the time of rental.</li>
+      <li>No one under the age of 12 is allowed to ride on the scooters.</li>
+      <li>Fuel charge is not included.</li>
+      <li>Unlimited mileage.</li>
+      <li>Liability insurance is included.</li>
+      <li>Damage insurance is available for purchase.</li>
+      <li>Free delivery for 2+ day rentals to Cozumel hotels or Airbnbs.</li>
+      <li>Payment options: Google Pay, Apple Pay, cash, credit card, debit card, or Venmo.</li>
+      <li>Rentals can be returned to either of our physical locations.</li>
+    </ul>
+  </section>
+
+  <!-- Reservation Form Section -->
+  <section id="reservation-form">
+    <h2>Reservation Form</h2>
+    <form id="reservation" action="thanks.html" method="get">
+      <div class="form-group">
+        <label for="name">Full Name:</label>
+        <input type="text" id="name" name="name" required>
+      </div>
+      <div class="form-group">
+        <label for="email">Email Address:</label>
+        <input type="email" id="email" name="email" required>
+      </div>
+      <div class="form-group">
+        <label for="phone">Phone Number:</label>
+        <input type="tel" id="phone" name="phone" required>
+      </div>
+      <div class="form-group">
+        <label for="rental-type">Rental Type:</label>
+        <select id="rental-type" name="rental-type" required>
+          <option value="honda-metro">Honda Metropolitan (49cc) - 1 person</option>
+          <option value="honda-dio">Honda Dio (110cc) - 2 person</option>
+          <option value="honda-pcx">Honda PCX150 (149cc) - 2 person</option>
+          <option value="honda-pioneer">Honda Pioneer 1000 ATV - 4 person</option>
+          <option value="jeep-4door">Jeep Wrangler (4 door, A/C) - 5 person</option>
+          <option value="jeep-2door">Jeep Wrangler (2 door) - 4 person</option>
+        </select>
+      </div>
+      <div class="form-group">
+        <label for="pickup-date">Pick-Up Date:</label>
+        <input type="date" id="pickup-date" name="pickup-date" required>
+      </div>
+      <div class="form-group">
+        <label for="dropoff-date">Drop-Off Date:</label>
+        <input type="date" id="dropoff-date" name="dropoff-date" required>
+      </div>
+      <div class="form-group">
+        <label for="special-requests">Special Accommodations/Requests:</label>
+        <textarea id="special-requests" name="special-requests" rows="4"></textarea>
+      </div>
+      <div class="form-group">
+        <button type="submit" id="submit-button">Reserve Now</button>
+      </div>
+    </form>
+  </section>
+
+  <!-- Footer Section -->
+  <footer>
+    <div class="social-media-links">
+      <a href="https://www.facebook.com">Facebook</a>
+      <a href="https://www.instagram.com">Instagram</a>
+      <a href="https://www.twitte.com">Twitter</a>
+    </div>
+    <p>&copy; 2024 ~Scoots~ Motor Scooter Rentals. All rights reserved.</p>
+  </footer>
+
+  <script src="scripts/scoots.js"></script> <!-- Link to JS file for form handling -->
+</body>
+</html>

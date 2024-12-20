@@ -1,18 +1,10 @@
 :root {
     --primary-bg-color: #00457C;
     --secondary-bg-color: #e0f7fa;
+    --dark-bg-color: #444;
     --text-color: #333;
     --light-text-color: #FFF5BE;
     --hover-bg-color: #00354B;
-}
-
-/* Dark mode */
-.dark-mode {
-    --primary-bg-color: #000000;
-    --secondary-bg-color: #989392;
-    --text-color: #FFFFFF;
-    --light-text-color: #FFF5BE;
-    --hover-bg-color: #444;
 }
 
 body {
@@ -20,6 +12,7 @@ body {
     margin: 0;
     padding: 0;
     background-color: var(--secondary-bg-color); 
+    color: var(--text-color);
     text-size-adjust: 100%; /* For modern browsers */
 }
 
@@ -29,6 +22,21 @@ header {
     padding: 10px;
     text-align: center;
     border-radius: 5px; 
+}
+
+h2 {
+    position: relative;
+    padding-bottom: 10px; 
+}
+
+h2::after {
+    content: ""; 
+    display: block; 
+    height: 2px; 
+    background-color: var(--primary-bg-color); 
+    width: calc(100% - 20px); /* Create space on both sides */
+    margin: 0 auto; /* Center the line */
+    border-radius: 2px; /* Slight rounding */
 }
 
 nav ul {
@@ -109,6 +117,42 @@ input:checked + .slider:before {
     transform: translateX(26px);
 }
 
+.dark-mode-label {
+    position: absolute;
+    top: 13px;
+    right: 60px;
+    color: var(--light-text-color);
+    font-size: .7em;
+    margin-right: 10px;
+}
+
+/* Dark Mode Styles */
+body.dark-mode {
+    background-color: #000;
+    color: #fff;
+}
+
+.hero.dark-mode,
+.card.dark-mode,
+#company-spotlights.dark-mode, 
+.spotlight.dark-mode,
+footer.dark-mode {
+    background-color: var(--dark-bg-color);
+    color: #fff;
+}
+
+.spotlight.dark-mode h3,
+.spotlight.dark-mode p,
+.spotlight.dark-mode a,
+.card.dark-mode h2,
+.card.dark-mode p,
+.hero.dark-mode h2,
+.hero.dark-mode p,
+#company-spotlights.dark-mode h2,
+#company-spotlights.dark-mode p {
+    color: #fff;
+}
+
 main {
     padding: 0 1%;
     background-color: var(--light-text-color); 
@@ -183,14 +227,24 @@ section {
     margin-bottom: 20px;
 }
 
-
-
-#visitor-questions li {
-    padding: 1rem;
+#business-spotlight,
+#current-events,
+#company-spotlights,
+#visitor-questions,
+#site-purpose {
+    background-color: var(--secondary-bg-color); 
+    padding: 20px;
+    border-radius: 5px; 
 }
 
 #current-events {
     margin-top: 20px; 
+}
+
+#current-events h2,
+#company-spotlights h2 {
+    color: var(--primary-bg-color); 
+    margin-bottom: 15px; 
 }
 
 #current-events ul {
@@ -221,11 +275,17 @@ section {
     color: var(--hover-bg-color); 
 }
 
+.weather-details {
+    margin-left: 15px; 
+}
+
 #weather-card {
     display: grid;
     grid-template-columns: 1fr 2fr; /* Two columns, 1 for today's forecast, 2 for 3-day forecast */
     gap: 20px; /* Space between the columns */
-    max-width: 100%;
+    margin: 20px auto;
+    padding: 20px;
+    max-width: 1000px;
     background-color: var(--secondary-bg-color);
     border-radius: 8px;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
@@ -234,6 +294,8 @@ section {
 #weather-card h2 {
     width: 100%;
     text-align: center;
+    margin: 0;
+    padding: 10px 0;
     background-color: var(--primary-bg-color);
     color: var(--light-text-color);
     grid-column: span 2;
@@ -321,10 +383,12 @@ footer {
 #sidebar {
     grid-row: 1;
     grid-column: 1;
+    align-self: start;
 }
 
 #sidebar img, #discover-content img {
     width: 100%;
+    max-height: auto;
 }
 
 #discover-content figure {

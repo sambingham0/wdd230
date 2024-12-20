@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>~Scoots~ Motor Scooter Rentals - Cozumel</title>
+  <link rel="stylesheet" href="styles/scoots.css">
+  <link rel="stylesheet" href="styles/scoots-larger.css">
+</head>
+<body>
+
+  <!-- Closeable message for today's high temperature -->
+  <div id="high-temp-message" class="closeable-message">
+    <span id="high-temp">--°F</span>
+    <button id="close-message">X</button>
+  </div>
+
+  <!-- Header Section -->
+  <header>
+    <nav>
+      <ul>
+        <li><a href="scoots.html">Home</a></li>
+        <li><a href="rentals.html">Rentals</a></li>
+        <li><a href="reservations.html">Reservations</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+    <h1>Welcome to ~Scoots~ Motor Scooter Rentals!</h1>
+    <p>Your adventure on Cozumel awaits!</p>
+    <a href="reservations.html" class="cta-button">Reserve Your Ride Now!</a>
+  </header>
+
+  <!-- Weather Section -->
+  <section id="weather">
+    <h2>Current Weather in Cozumel</h2>
+    <div id="weather-info">
+      <p><strong>Temperature:</strong> <span id="temp">--°F</span></p>
+      <p><strong>Humidity:</strong> <span id="humidity">--%</span></p>
+      <p><strong>Tomorrow's Forecast (3:00 PM):</strong> <span id="forecast"></span></p>
+      <p><strong>Condition:</strong> <span id="weather-condition">--</span></p>
+      <p><strong>Description:</strong> <span id="weather-description">--</span></p>
+      <img id="weather-icon" src="" alt="weather icon" />
+    </div>
+  </section>
+
+  <!-- Rental Types Section -->
+  <section id="rentals-summary">
+    <h2>Our Rentals</h2>
+    <div class="rental-type">
+      <h3>Honda Motor Scooters</h3>
+      <ul>
+        <li>Honda Metropolitan (49cc) - 1 person</li>
+        <li>Honda Dio (110cc) - 2 person</li>
+        <li>Honda PCX150 (149cc) - 2 person</li>
+      </ul>
+    </div>
+    <div class="rental-type">
+      <h3>Side-by-Side ATVs</h3>
+      <ul>
+        <li>Honda Pioneer 1000 - 4 person</li>
+      </ul>
+    </div>
+    <div class="rental-type">
+      <h3>Jeeps</h3>
+      <ul>
+        <li>Jeep Wrangler (4 door, A/C) - 5 person</li>
+        <li>Jeep Wrangler (2 door, open air) - 4 person</li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- Footer Section -->
+  <footer>
+    <div class="social-media-links">
+      <a href="https://www.facebook.com">Facebook</a>
+      <a href="https://www.instagram.com">Instagram</a>
+      <a href="https://www.twitte.com">Twitter</a>
+    </div>
+    <p>&copy; 2024 ~Scoots~ Motor Scooter Rentals. All rights reserved.</p>
+  </footer>
+
+  <!-- Scripts -->
+  <script src="scripts/scoots.js"></script> <!-- Link to your JS file for weather data and closeable message -->
+
+</body>
+</html>
