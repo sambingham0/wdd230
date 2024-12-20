@@ -55,21 +55,21 @@ async function forecastAPIFetch() {
 
 function displayResults(data) {
   const temp = Math.round(data.main.temp);
-  currentTemp.textContent = `${temp}&deg;F`;
+  currentTemp.innerHTML = `${temp}&deg;F`;
   const iconsrc = `https://openweathermap.org/img/w/${data.weather[0].icon}.png`;
   let title = data.weather[0].main;
   let desc = data.weather[0].description;
-  weatherTitle.textContent = title;
+  weatherTitle.innerHTML = title;
 
   weatherIcon.setAttribute('src', iconsrc);
   weatherIcon.setAttribute('alt', desc);
   captionDesc.textContent = `${desc}`;
 
   const humid = data.main.humidity;
-  currentHumid.textContent = `${humid}%`;
+  currentHumid.innerHTML = `${humid}%`;
 
   const high = data.main.temp_max;
-  tempHigh.textContent = `Today's high temperature: ${high}&deg;F`;
+  tempHigh.innerHTML = `Today's high temperature: ${high}&deg;F`;
 }
 
 function displayForecast(forecastList) {
@@ -86,7 +86,7 @@ function displayForecast(forecastList) {
   );
 
   const temp = Math.round(tomorrowForecast.main.temp);
-  forecast.textContent = `${temp}&deg;F`;
+  forecast.innerHTML = `${temp}&deg;F`;
 }
 
 // rentals scripts
