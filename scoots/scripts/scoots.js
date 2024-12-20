@@ -21,6 +21,8 @@ const captionDesc = document.querySelector('#weather-description');
 const currentHumid = document.querySelector('#humidity');
 const tempHigh = document.querySelector('#high-temp');
 
+const tableBody = document.querySelector("#rental-pricing");
+
 async function apiFetch() {
   try {
       const response = await fetch(url);
@@ -99,9 +101,7 @@ async function getRentals() {
   loadRentalData(data)
 }
 
-function loadRentalData(rentalData) {
-  const tableBody = document.querySelector("#rental-pricing");
-  
+function loadRentalData(rentalData) {  
   rentalData.forEach(rental => {
     const row = document.createElement("tr");
     
